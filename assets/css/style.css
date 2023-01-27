@@ -34,3 +34,16 @@ body{
     height: 50px;
     border-radius: 5%;
 }
+
+.instruction-btn:hover{
+    background: red;
+}
+
+.start-game-btn:hover{
+    background: red;
+}
+
+.instructions-text{
+    color: #fff;
+    display: none;
+}
