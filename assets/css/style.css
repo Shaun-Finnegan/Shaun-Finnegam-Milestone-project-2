@@ -1,0 +1,36 @@
+body{
+    background-color: blue;
+}
+
+.main-img-container{
+   text-align: center;
+   margin-top: 30px;
+}
+
+.bad-bucky{
+    display: inline-block;
+}
+
+.instuctions-container{
+    text-align: center;
+    margin-top: 30px
+}
+
+.instruction-btn{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border-radius: 5%;
+}
+
+.start-game-btn-container{
+    text-align: center;
+    margin-top: 30px
+}
+
+.start-game-btn{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border-radius: 5%;
+}
