@@ -1,3 +1,5 @@
+
+
 const instructionBtn = document.getElementById('instruction-btn');
 const howToPlay = document.getElementById('instructions-text');
 const closeInstructions = document.getElementById('close-instructions');
