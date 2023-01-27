@@ -16,7 +16,7 @@ body{
     margin-top: 30px
 }
 
-.instruction-btn{
+#instruction-btn{
     display: inline-block;
     width: 100px;
     height: 50px;
@@ -35,7 +35,7 @@ body{
     border-radius: 5%;
 }
 
-.instruction-btn:hover{
+#instruction-btn:hover{
     background: red;
 }
 
@@ -43,7 +43,7 @@ body{
     background: red;
 }
 
-.instructions-text{
+#instructions-text{
     color: #fff;
     display: none;
 }
