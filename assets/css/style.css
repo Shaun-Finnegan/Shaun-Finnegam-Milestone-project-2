@@ -75,8 +75,8 @@ body{
 
 
   #canvas-main{
-    border: 1px solid black;
-    width: 100%;
+    min-width: 100%;
+    width: 500;
     height:300px;
   }
   #score-container{
