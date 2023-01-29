@@ -92,6 +92,8 @@ function gameLoop (){
     ctx.drawImage(fox2, 0, 0 , 100, 100, fox2X, fox2Y, fox2Width, fox2Height);
     fox1WallCol();
     fox2WallCol();
+    fox1Collision();
+    fox2Collision();
     wallOne();
     wallTwo();
     wallThree();
@@ -271,6 +273,24 @@ function mainCollision(){
       enemyY = Math.floor(Math.random() * 320);
       result++;
       score.innerHTML = result;
+    }
+};
+
+function fox1Collision (){
+    if ((x + 80 >= fox1X  &&
+        y + 80 >= fox1Y &&
+       x <= fox1X + 80 &&
+       y <= fox1Y + 80)){
+         x = 0;
+    }
+};
+
+function fox2Collision (){
+    if ((x + 80 >= fox2X  &&
+        y + 80 >= fox2Y &&
+       x <= fox2X + 80 &&
+       y <= fox2Y + 80)){
+         x = 0;
     }
 };
 
