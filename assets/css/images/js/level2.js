@@ -45,7 +45,7 @@ let fox1Width = 80;
 let fox1Height = 80;
 
 let fox2X = 500;
-let fox2Y = 300;
+let fox2Y = 100;
 let fox2Width = 80;
 let fox2Height = 80;
 
