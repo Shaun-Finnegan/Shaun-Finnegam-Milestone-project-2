@@ -39,12 +39,20 @@ let enemyY  = 200;
 let enemyWidth = 80;
 let enemyHeight = 80;
 
+let fox1X = 300;
+let fox1Y = 300;
+let fox1Width = 80;
+let fox1Height = 80;
+
 
 const mainSprite = new Image();
 mainSprite.src = 'assets/css/images/main-rabbit.png'
 
 carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
+
+const fox1 = new Image();
+fox1.src = 'assets/css/images/foxenemy.png';
 
 
 
@@ -69,6 +77,7 @@ function gameLoop (){
     mainCollision();
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
+    ctx.drawImage(fox1, 0, 0 , 100, 100, fox1X, fox1Y, fox1Width, fox1Height);
     wallOne();
     wallTwo();
     wallThree();
