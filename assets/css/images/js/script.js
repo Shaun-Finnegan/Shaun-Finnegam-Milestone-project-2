@@ -5,7 +5,7 @@ const canvas = document.getElementById('canvas-main');
 const ctx = canvas.getContext('2d');
 
 const animationSprite = new Image();
-animationSprite.src = 'assets/css/images/rabbitcarrot.png';
+animationSprite.src = 'assets/css/images/rabbitchasingcarrot .png';
 let x =20;
 let y = 20;
 let reverseX = x--;

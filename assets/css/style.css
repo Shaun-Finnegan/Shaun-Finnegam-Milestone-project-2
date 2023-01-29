@@ -54,6 +54,10 @@ body{
 }
 
 
+#restart-button:hover{
+  background-color: #fff;
+}
+
 
 
 #container{
