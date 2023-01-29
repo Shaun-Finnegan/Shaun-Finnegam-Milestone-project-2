@@ -44,6 +44,12 @@ let fox1Y = 300;
 let fox1Width = 80;
 let fox1Height = 80;
 
+let fox2X = 500;
+let fox2Y = 300;
+let fox2Width = 80;
+let fox2Height = 80;
+
+
 
 const mainSprite = new Image();
 mainSprite.src = 'assets/css/images/main-rabbit.png'
@@ -53,6 +59,9 @@ carrot.src = 'assets/css/images/carrots.png';
 
 const fox1 = new Image();
 fox1.src = 'assets/css/images/foxenemy.png';
+
+const fox2 = new Image();
+fox2.src = 'assets/css/images/foxenemy.png';
 
 
 
@@ -64,6 +73,8 @@ let rightPressed = false;
 
 let speed = 5;
 let enemySpeed = 2;
+let fox1Speed = 2;
+let fox2Speed = 2;
 //Game Loop with functions
 
 function gameLoop (){
@@ -78,6 +89,9 @@ function gameLoop (){
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
     ctx.drawImage(fox1, 0, 0 , 100, 100, fox1X, fox1Y, fox1Width, fox1Height);
+    ctx.drawImage(fox2, 0, 0 , 100, 100, fox2X, fox2Y, fox2Width, fox2Height);
+    fox1WallCol();
+    fox2WallCol();
     wallOne();
     wallTwo();
     wallThree();
@@ -230,7 +244,23 @@ if(enemyX === 200 && enemyY >= 100){
   enemyX = 485;
   
 }
-}
+};
+
+function fox1WallCol(){
+    if(fox1Y  === 0 || fox1Y + 80 === 400){
+        fox1Speed = -fox1Speed;
+    }
+    
+     fox1Y += fox1Speed;
+    };
+
+    function fox2WallCol(){
+        if(fox2Y  === 0 || fox2Y + 80 === 400){
+            fox2Speed = -fox2Speed;
+        }
+        
+         fox2Y += fox2Speed;
+        };
 
 function mainCollision(){
   if (x + 80 >= enemyX  &&
