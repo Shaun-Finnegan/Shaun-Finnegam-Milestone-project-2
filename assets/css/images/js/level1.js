@@ -224,10 +224,10 @@ if(enemyX === 200 && enemyY >= 100){
 }
 
 function mainCollision(){
-  if (x + 80 >= enemyX  &&
-     y + 80 >= enemyY &&
-    x <= enemyX + 80 &&
-    y <= enemyY + 80){
+  if (x + 60 >= enemyX  &&
+     y + 60 >= enemyY &&
+    x <= enemyX + 60 &&
+    y <= enemyY + 60){
       enemyX = Math.floor(Math.random() * 920);
       enemyY = Math.floor(Math.random() * 320);
       result++;
