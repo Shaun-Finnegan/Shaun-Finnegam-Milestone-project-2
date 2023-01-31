@@ -278,19 +278,19 @@ function fox1WallCol(){
         };
 
 function fox1Collision (){
-    if ((x + 80 >= fox1X  &&
-        y + 80 >= fox1Y &&
-       x <= fox1X + 80 &&
-       y <= fox1Y + 80)){
+    if ((x + 60 >= fox1X  &&
+        y + 60 >= fox1Y &&
+       x <= fox1X + 60 &&
+       y <= fox1Y + 60)){
          x = 0;
     }
 };
 
 function fox2Collision (){
-    if ((x + 80 >= fox2X  &&
-        y + 80 >= fox2Y &&
-       x <= fox2X + 80 &&
-       y <= fox2Y + 80)){
+    if ((x + 60 >= fox2X  &&
+        y + 60 >= fox2Y &&
+       x <= fox2X + 60 &&
+       y <= fox2Y + 60)){
          x = 0;
     }
 };
