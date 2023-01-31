@@ -39,6 +39,19 @@ let enemyY  = 200;
 let enemyWidth = 80;
 let enemyHeight = 80;
 
+let wallOneX = 400;
+let wallOneY = 0;
+let wallTwoX = 400;
+let wallTwoY = 300;
+let wallThreeX = 600;
+let wallThreeY = 0;
+let wallFourX = 800;
+let wallFourY = 0;
+let wallFiveX = 800;
+let wallFiveY = 300;
+let wallSixX = 200;
+let wallSixY = 100;
+
 let fox1X = 300;
 let fox1Y = 300;
 let fox1Width = 80;
@@ -141,27 +154,27 @@ function maxPoints(){
 
 
 function wallOne(){
-  ctx.fillRect(400, 0, 20, 150);
+  ctx.fillRect(wallOneX, wallOneY, 20, 150);
 };
 
 function wallTwo(){
-  ctx.fillRect(400, 300, 20 ,100);
+  ctx.fillRect(wallTwoX, wallTwoY, 20 ,100);
 };
 
 function wallThree(){
-  ctx.fillRect(600, 0, 20, 200);
+  ctx.fillRect(wallThreeX, wallThreeY, 20, 200);
 };
 
 function wallFour(){
-  ctx.fillRect(800, 0, 20, 150);
+  ctx.fillRect(wallFourX, wallFourY, 20, 150);
 };
 
 function wallFive(){
-  ctx.fillRect(800, 300, 20, 100);
+  ctx.fillRect(wallFiveX, wallFiveY, 20, 100);
 };
 
 function wallSix(){
-  ctx.fillRect(200, 100, 20, 300);
+  ctx.fillRect(wallSixX, wallSixY, 20, 300);
 };
 
 
@@ -224,27 +237,23 @@ if(x === 150 && y > 50 ){
 
 };
 function enemyWallCol(){
-  if(enemyX === 400 && enemyY <= 150){
-     enemyX = 350
-     
-  }
-  if(enemyX === 400 && enemyY >= 300){
-    enemyX  = 235;
-    
+  if(enemyX === 350 && enemyY < 150 ){
+    x = 0;
  }
- if(enemyX === 600 && enemyY <= 50){
-  enemyX = 685;
-
+ if(enemyX === 350 && enemyY > 250 ){
+  x = 0;
 }
-if(enemyX === 800 && enemyY <= 150){
-  enemyX = 900;
+if(enemyX === 550 && enemyY < 200 ){
+  x = 0;
 }
-if(enemyX === 800 && enemyY >= 300){
-  enemyX = 620;
+if(enemyX === 750 &&  enemyY < 150 ){
+  x = 0;
 }
-if(enemyX === 200 && enemyY >= 100){
-  enemyX = 485;
-  
+if(enemyX === 750 && enemyY > 250 ){
+  x = 0;
+}
+if(enemyX === 150 && enemyY > 50 ){
+  x = 0;
 }
 };
 
