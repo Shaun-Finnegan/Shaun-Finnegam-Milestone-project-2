@@ -124,11 +124,11 @@ function wallTwo(){
 };
 
 function wallThree(){
-  ctx.fillRect(600, 0, 25, 50);
+  ctx.fillRect(600, 0, 20, 200);
 };
 
 function wallFour(){
-  ctx.fillRect(800, 100, 20, 50);
+  ctx.fillRect(800, 0, 20, 150);
 };
 
 function wallFive(){
@@ -177,22 +177,22 @@ if(enemyY >= 320){
 };
 
 function wallCol(){
-  if(x === 400 && y < 150 ){
+  if(x === 350 && y < 150 ){
     x = 0;
  }
- if(x === 400 && y > 250 ){
+ if(x === 350 && y > 250 ){
   x = 0;
 }
-if(x === 600 && y < 50 ){
+if(x === 550 && y < 200 ){
   x = 0;
 }
-if(x === 800 && y > 80 && y < 150 ){
+if(x === 750 &&  y < 150 ){
   x = 0;
 }
-if(x === 800 && y > 250 ){
+if(x === 750 && y > 250 ){
   x = 0;
 }
-if(x === 200 && y > 50 ){
+if(x === 150 && y > 50 ){
   x = 0;
 }
 
@@ -334,7 +334,7 @@ function mobileInputs(){
   }
 
   if(mobileMoveLeft){
-    x = x - speed;;
+    x = x - speed;
   }
 };
 
