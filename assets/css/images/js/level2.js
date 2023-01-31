@@ -264,17 +264,18 @@ function fox1WallCol(){
          fox2Y += fox2Speed;
         };
 
-function mainCollision(){
-  if (x + 80 >= enemyX  &&
-     y + 80 >= enemyY &&
-    x <= enemyX + 80 &&
-    y <= enemyY + 80){
-      enemyX = Math.floor(Math.random() * 920);
-      enemyY = Math.floor(Math.random() * 320);
-      result++;
-      score.innerHTML = result;
-    }
-};
+
+        function mainCollision(){
+          if (x + 60 >= enemyX  &&
+             y + 60 >= enemyY &&
+            x <= enemyX + 60 &&
+            y <= enemyY + 60){
+              enemyX = Math.floor(Math.random() * 920);
+              enemyY = Math.floor(Math.random() * 320);
+              result++;
+              score.innerHTML = result;
+            }
+        };
 
 function fox1Collision (){
     if ((x + 80 >= fox1X  &&
