@@ -211,28 +211,32 @@ if(x === 150 && y > 50 ){
 
 };
 
-function enemyWallCol(){
-  if(enemyX === 350  && enemyY < 150 ){
-    x = 0;
- }
- if(enemyX === 350 && enemyY > 250 ){
-  x = 0;
-}
-if(enemyX === 550 && enemyY < 200 ){
-  x = 0;
-}
-if(enemyX === 750 &&  enemyY < 150 ){
-  x = 0;
-}
-if(enemyX === 750 && enemyY > 250 ){
-  x = 0;
-}
-if(enemyX === 150 && enemyY > 50 ){
-  x = 0;
-}
-  
-};
-
+function enemyWallCol (){
+  if(enemyX >= wallOneX && enemyX <= wallOneX + 20 ){
+    enemyX = 0;
+    enemyY= 0;
+  }
+  if(enemyX >= wallTwoX && enemyX <= wallTwoX + 20 ){
+    enemyX = 0;
+    enemyY= 0;
+  }
+  if(enemyX >= wallThreeX && enemyX <= wallThreeX + 20 ){
+    enemyX = 0;
+    enemyY= 0;
+  }
+  if(enemyX >= wallFourX && enemyX <= wallFourX + 20 ){
+    enemyX = 0;
+    enemyY= 0;
+  }
+  if(enemyX >= wallFiveX && enemyX <= wallFiveX + 20 ){
+    enemyX = 0;
+    enemyY= 0;
+  }
+  if(enemyX >= wallSixX && enemyX <= wallSixX + 20 ){
+    enemyX = 0;
+    enemyY= 0;
+  }
+  };
 
 function mainCollision(){
   if (x + 60 >= enemyX  &&
@@ -245,6 +249,7 @@ function mainCollision(){
       score.innerHTML = result;
     }
 };
+
 
 
 function inputs (){
