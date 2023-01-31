@@ -44,7 +44,7 @@ let fox1Y = 300;
 let fox1Width = 80;
 let fox1Height = 80;
 
-let fox2X = 500;
+let fox2X = 700;
 let fox2Y = 100;
 let fox2Width = 80;
 let fox2Height = 80;
@@ -149,11 +149,11 @@ function wallTwo(){
 };
 
 function wallThree(){
-  ctx.fillRect(600, 0, 25, 50);
+  ctx.fillRect(600, 0, 20, 200);
 };
 
 function wallFour(){
-  ctx.fillRect(800, 100, 20, 50);
+  ctx.fillRect(800, 0, 20, 150);
 };
 
 function wallFive(){
@@ -163,6 +163,7 @@ function wallFive(){
 function wallSix(){
   ctx.fillRect(200, 100, 20, 300);
 };
+
 
 
 
@@ -202,27 +203,26 @@ if(enemyY >= 320){
 };
 
 function wallCol(){
-  if(x === 400 && y < 150 ){
+  if(x === 350 && y < 150 ){
     x = 0;
  }
- if(x === 400 && y > 250 ){
+ if(x === 350 && y > 250 ){
   x = 0;
 }
-if(x === 600 && y < 50 ){
+if(x === 550 && y < 200 ){
   x = 0;
 }
-if(x === 800 && y > 80 && y < 150 ){
+if(x === 750 &&  y < 150 ){
   x = 0;
 }
-if(x === 800 && y > 250 ){
+if(x === 750 && y > 250 ){
   x = 0;
 }
-if(x === 200 && y > 50 ){
+if(x === 150 && y > 50 ){
   x = 0;
 }
 
 };
-
 function enemyWallCol(){
   if(enemyX === 400 && enemyY <= 150){
      enemyX = 350
