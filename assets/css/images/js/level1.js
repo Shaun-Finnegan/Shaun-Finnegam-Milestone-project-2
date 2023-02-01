@@ -39,6 +39,9 @@ let enemyY  = 200;
 let enemyWidth = 80;
 let enemyHeight = 80;
 
+  
+ 
+  
 
 let wallOneX = 400;
 let wallOneY = 0;
@@ -78,7 +81,6 @@ function gameLoop (){
     boundryCollision();
     enemyBoundryCol();
     wallCol();
-    enemyWallCol();
     mainCollision();
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
@@ -211,42 +213,28 @@ if(x === 150 && y > 50 ){
 
 };
 
-function enemyWallCol (){
-  if(enemyX >= wallOneX && enemyX <= wallOneX + 20 ){
-    enemyX = 0;
-    enemyY= 0;
-  }
-  if(enemyX >= wallTwoX && enemyX <= wallTwoX + 20 ){
-    enemyX = 0;
-    enemyY= 0;
-  }
-  if(enemyX >= wallThreeX && enemyX <= wallThreeX + 20 ){
-    enemyX = 0;
-    enemyY= 0;
-  }
-  if(enemyX >= wallFourX && enemyX <= wallFourX + 20 ){
-    enemyX = 0;
-    enemyY= 0;
-  }
-  if(enemyX >= wallFiveX && enemyX <= wallFiveX + 20 ){
-    enemyX = 0;
-    enemyY= 0;
-  }
-  if(enemyX >= wallSixX && enemyX <= wallSixX + 20 ){
-    enemyX = 0;
-    enemyY= 0;
-  }
-  };
 
 function mainCollision(){
   if (x + 60 >= enemyX  &&
      y + 60 >= enemyY &&
     x <= enemyX + 60 &&
     y <= enemyY + 60){
-      enemyX = Math.floor(Math.random() * 920);
-      enemyY = Math.floor(Math.random() * 320);
-      result++;
-      score.innerHTML = result;
+      let xCoOrd = [];
+        let deleteNums = [400, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435,
+                   436, 437, 438, 439, 440];
+       for (let i = 0; i < 1001; i++) {
+           xCoOrd.push(i);
+          };
+  
+            let newX =  xCoOrd.filter(function(value){
+            return !deleteNums.includes(value);
+           }) ;
+  
+           let enemyXValue = newX[Math.floor(Math.random() * newX.length)];
+            console.log(enemyXValue);
+           enemyX = enemyXValue;
+            result++;
+            score.innerHTML = result;
     }
 };
 
