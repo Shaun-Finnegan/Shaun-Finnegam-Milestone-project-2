@@ -74,6 +74,10 @@ celebrate.src ='assets/css/images/audio/crowd-cheer-ii-6263.mp3';
 gameOverAudio = new Audio();
 gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3'
 
+morningBirds = new Audio();
+morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
+morningBirds.play();
+
 
 
 //Input variables
@@ -123,6 +127,7 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
+   morningBirds.stop();
   }
 };
 
@@ -140,6 +145,7 @@ function maxPoints(){
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      celebrate.play();
+     morningBirds.stop();
     }
 };
 
