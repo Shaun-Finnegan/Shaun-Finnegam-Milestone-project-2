@@ -87,7 +87,11 @@ boingAudio.src= 'assets/css/images/audio/boing-6222.mp3';
 let bunnyGrunt = new Audio ();
 bunnyGrunt.src = 'assets/css/images/audio/bunny-grunt.mp3';
 
+let celebrate = new Audio ();
+celebrate.src ='assets/css/images/audio/crowd-cheer-ii-6263.mp3';
 
+gameOverAudio = new Audio();
+gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3'
 
 //Input variables
 let upPressed = false;
@@ -143,7 +147,7 @@ function countDown(){
     rightArrow.style.display = 'none';
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
-   
+   gameOverAudio.play();
   }
 };
 
@@ -160,6 +164,7 @@ function maxPoints(){
      rightArrow.style.display = 'none';
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
+     celebrate.play();
     }
 };
 
