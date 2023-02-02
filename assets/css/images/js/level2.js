@@ -97,6 +97,7 @@ function gameLoop (){
     boundryCollision();
     enemyBoundryCol();
     wallCol();
+    backWallCol();
     mainCollision();
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
@@ -224,16 +225,37 @@ function wallCol(){
 if(x === 550 && y < 200 ){
   x = 0;
 }
-if(x === 750 &&  y < 150 ){
+if(x === 750 && y < 150 ){
   x = 0;
 }
-if(x === 750 && y > 250 ){
+if(x === 750  && y > 250 ){
   x = 0;
 }
 if(x === 150 && y > 50 ){
   x = 0;
 }
+};
 
+
+function backWallCol(){
+  if(x === 370  && y < 150 ){
+    x = 0;
+ }
+ if(x === 370 && y > 250 ){
+  x = 0;
+}
+if(x === 570 && y < 200 ){
+  x = 0;
+}
+if(x === 770 && y < 150 ){
+  x = 0;
+}
+if(x === 770  && y > 250 ){
+  x = 0;
+}
+if(x === 170  && y > 50 ){
+  x = 0;
+}
 };
 
 function fox1WallCol(){
