@@ -84,6 +84,9 @@ rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 let boingAudio = new Audio ();
 boingAudio.src= 'assets/css/images/audio/boing-6222.mp3';
 
+let bunnyGrunt = new Audio ();
+bunnyGrunt.src = 'assets/css/images/audio/bunny-grunt.mp3';
+
 
 
 //Input variables
@@ -336,6 +339,7 @@ function fox1Collision (){
        x <= fox1X + 60 &&
        y <= fox1Y + 60)){
          x = 0;
+         bunnyGrunt.play();
     }
 };
 
@@ -345,6 +349,7 @@ function fox2Collision (){
        x <= fox2X + 60 &&
        y <= fox2Y + 60)){
          x = 0;
+         bunnyGrunt.play();
     }
 };
 
