@@ -59,8 +59,14 @@ let wallSixY = 100;
 const mainSprite = new Image();
 mainSprite.src = 'assets/css/images/main-rabbit.png'
 
-carrot = new Image();
+let carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
+
+let rabbitAudio = new Audio();
+rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
+
+let boingAudio = new Audio ();
+boingAudio.src= 'assets/css/images/audio/boing-6222.mp3';
 
 
 
@@ -195,21 +201,27 @@ if(enemyY >= 320){
 function wallCol(){
   if(x === 350  && y < 150 ){
     x = 0;
+    boingAudio.play();
  }
  if(x === 350 && y > 250 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 550  && y < 200 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 750 && y < 150 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 750  && y > 250 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 150  && y > 50 ){
   x = 0;
+  boingAudio.play();
 }
 
 };
@@ -217,21 +229,27 @@ if(x === 150  && y > 50 ){
 function backWallCol(){
   if(x === 370  && y < 150 ){
     x = 0;
+    boingAudio.play();
  }
  if(x === 370 && y > 250 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 570 && y < 200 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 770 && y < 150 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 770  && y > 250 ){
   x = 0;
+  boingAudio.play();
 }
 if(x === 170  && y > 50 ){
   x = 0;
+  boingAudio.play();
 }
 };
 
@@ -265,6 +283,7 @@ function mainCollision(){
            enemyY = Math.floor(Math.random() * 320);
             result++;
             score.innerHTML = result;
+            rabbitAudio.play();
     }
 };
 
