@@ -345,10 +345,12 @@ function noLifeLeft(){
      rightArrow.style.display = 'none';
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
+    morningBirds.pause();
     gameOverAudio.play();
-    morningBirds.stop();
+    livesLeft = 5;
   }
 };
+
 
 
 function inputs (){
