@@ -39,10 +39,13 @@ let enemyY  = 200;
 let enemyWidth = 80;
 let enemyHeight = 80;
 
-  
- 
-  
+let sCarrotX = 60;
+let sCarrotY = 100
+let sCarrotWidth = 100;
+let sCarrotHeight = 100;
 
+
+  
 let wallOneX = 400;
 let wallOneY = 0;
 let wallTwoX = 400;
@@ -65,6 +68,9 @@ carrot.src = 'assets/css/images/carrots.png';
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 
+let bunnyGrunt = new Audio ();
+bunnyGrunt.src = 'assets/css/images/audio/bunny-grunt.mp3';
+
 let boingAudio = new Audio ();
 boingAudio.src= 'assets/css/images/audio/boing-6222.mp3';
 
@@ -78,10 +84,15 @@ morningBirds = new Audio();
 morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
 morningBirds.play();
 
+const fox1 = new Image();
+fox1.src = 'assets/css/images/foxenemy.png';
 
-let superCarrot = new Image();
-superCarrot.src = 'assets/css/images/super-carrot .png';
+let fox1X = 300;
+let fox1Y = 300;
+let fox1Width = 80;
+let fox1Height = 80;
 
+let fox1Speed = 2;
 
 //Input variables
 let upPressed = false;
@@ -104,7 +115,9 @@ function gameLoop (){
     mainCollision();
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
-    drawSuperCarrot();
+    ctx.drawImage(fox1, 0, 0 , 100, 100, fox1X, fox1Y, fox1Width, fox1Height);
+    fox1WallCol();
+    fox1Collision();
     wallOne();
     wallTwo();
     wallThree();
@@ -178,17 +191,6 @@ function wallSix(){
   ctx.fillRect(wallSixX, wallSixY, 20, 300);
 };
  
-function drawSuperCarrot(){
-  if(timeLeft < 5){
-    ctx.drawImage(superCarrot, 0, 0, 100, 100, 80, 100, 150, 150);
-  }
-};
-
-
-
-
-
-
 
 
 function boundryCollision(){
@@ -279,6 +281,14 @@ if(x === 170  && y > 50 ){
 }
 };
 
+function fox1WallCol(){
+  if(fox1Y  === 0 || fox1Y + 80 === 400){
+      fox1Speed = -fox1Speed;
+  }
+  
+   fox1Y += fox1Speed;
+  };
+
 function mainCollision(){
   if (x + 60 >= enemyX  &&
      y + 60 >= enemyY &&
@@ -313,6 +323,15 @@ function mainCollision(){
     }
 };
 
+function fox1Collision (){
+  if ((x + 60 >= fox1X  &&
+      y + 60 >= fox1Y &&
+     x <= fox1X + 60 &&
+     y <= fox1Y + 60)){
+       x = 0;
+       bunnyGrunt.play();
+  }
+};
 
 
 function inputs (){
