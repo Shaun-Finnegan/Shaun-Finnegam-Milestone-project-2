@@ -79,6 +79,9 @@ morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
 morningBirds.play();
 
 
+let superCarrot = new Image();
+superCarrot.src = 'assets/css/images/super-carrot .png';
+
 
 //Input variables
 let upPressed = false;
@@ -101,6 +104,7 @@ function gameLoop (){
     mainCollision();
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
+    drawSuperCarrot();
     wallOne();
     wallTwo();
     wallThree();
@@ -173,6 +177,15 @@ function wallFive(){
 function wallSix(){
   ctx.fillRect(wallSixX, wallSixY, 20, 300);
 };
+ 
+function drawSuperCarrot(){
+  if(timeLeft < 5){
+    ctx.drawImage(superCarrot, 0, 0, 100, 100, 80, 100, 150, 150);
+  }
+};
+
+
+
 
 
 
