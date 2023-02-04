@@ -42,6 +42,12 @@ let enemyY  = 200;
 let enemyWidth = 80;
 let enemyHeight = 80;
 
+let brocoliX = 100;
+let brocoliY = 100;
+let brocoliWidth = 100;
+let brocoliHeight = 100;
+
+
 
 let wallOneX = 400;
 let wallOneY = 0;
@@ -62,6 +68,9 @@ mainSprite.src = 'assets/css/images/main-rabbit.png'
 let carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
+let brocolli = new Image();
+brocolli.src = 'assets/css/images/brocolli.png';
+
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 
@@ -74,10 +83,10 @@ boingAudio.src= 'assets/css/images/audio/boing-6222.mp3';
 let celebrate = new Audio ();
 celebrate.src ='assets/css/images/audio/crowd-cheer-ii-6263.mp3';
 
-gameOverAudio = new Audio();
+let gameOverAudio = new Audio();
 gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3'
 
-morningBirds = new Audio();
+let morningBirds = new Audio();
 morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
 morningBirds.play();
 
@@ -123,6 +132,8 @@ function gameLoop (){
     wallSix();
     maxPoints();
     noLifeLeft();
+    drawBrocoli();
+    eatBrocoli();
     requestAnimationFrame(gameLoop);
 };
 
@@ -349,6 +360,22 @@ function noLifeLeft(){
     gameOverAudio.play();
     livesLeft = 5;
   }
+};
+
+
+function drawBrocoli(){
+ if(timeLeft > 20 && timeLeft < 30){
+  ctx.drawImage(brocolli, 0, 0 , 100, 100, brocoliX, brocoliY, brocoliWidth, brocoliHeight);
+ }
+};
+
+function eatBrocoli (){
+   if((x + 60 >= brocoliX  &&
+    y + 60 >= brocoliY &&
+   x <= brocoliX+ 60 &&
+   y <= brocoliY + 60)){
+      rabbitAudio.play();
+   }
 };
 
 
