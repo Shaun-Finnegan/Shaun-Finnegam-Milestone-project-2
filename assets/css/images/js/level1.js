@@ -100,6 +100,8 @@ let fox1Height = 80;
 
 let fox1Speed = 2;
 
+let brocolliTime = false;
+
 //Input variables
 let upPressed = false;
 let downPressed = false;
@@ -334,10 +336,10 @@ function mainCollision(){
 };
 
 function fox1Collision (){
-  if ((x + 60 >= fox1X  &&
+  if (x + 60 >= fox1X  &&
       y + 60 >= fox1Y &&
      x <= fox1X + 60 &&
-     y <= fox1Y + 60)){
+     y <= fox1Y + 60){
        x = 0;
        bunnyGrunt.play();
        livesLeft--;
@@ -365,15 +367,19 @@ function noLifeLeft(){
 
 function drawBrocoli(){
  if(timeLeft > 20 && timeLeft < 30){
-  ctx.drawImage(brocolli, 0, 0 , 100, 100, brocoliX, brocoliY, brocoliWidth, brocoliHeight);
+  brocolliTime = true;
  }
+ if(brocolliTime){
+    ctx.drawImage(brocolli, 0, 0, 100, 100, brocoliX, brocoliY, brocoliWidth, brocoliHeight)
+ }
+
 };
 
 function eatBrocoli (){
-   if((x + 60 >= brocoliX  &&
+   if(x + 60 >= brocoliX  &&
     y + 60 >= brocoliY &&
-   x <= brocoliX+ 60 &&
-   y <= brocoliY + 60)){
+   x <= brocoliX + 60 &&
+   y <= brocoliY + 60){
       rabbitAudio.play();
    }
 };
