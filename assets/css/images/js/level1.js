@@ -11,6 +11,9 @@ let result = 0;
 const time = document.getElementById('time');
 let timeLeft = 60;
 
+const lives = document.getElementById('lives');
+let livesLeft = 5;
+
 const gameOver = document.getElementById('game-over');
 const youWin = document.getElementById('you-win');
 const newGame = document.getElementById('restart-button');
@@ -39,13 +42,7 @@ let enemyY  = 200;
 let enemyWidth = 80;
 let enemyHeight = 80;
 
-let sCarrotX = 60;
-let sCarrotY = 100
-let sCarrotWidth = 100;
-let sCarrotHeight = 100;
 
-
-  
 let wallOneX = 400;
 let wallOneY = 0;
 let wallTwoX = 400;
@@ -87,7 +84,7 @@ morningBirds.play();
 const fox1 = new Image();
 fox1.src = 'assets/css/images/foxenemy.png';
 
-let fox1X = 300;
+let fox1X = 500;
 let fox1Y = 300;
 let fox1Width = 80;
 let fox1Height = 80;
@@ -165,6 +162,7 @@ function maxPoints(){
      morningBirds.stop();
     }
 };
+
 
 
 function wallOne(){
@@ -330,6 +328,8 @@ function fox1Collision (){
      y <= fox1Y + 60)){
        x = 0;
        bunnyGrunt.play();
+       livesLeft--;
+       lives.innerHTML = livesLeft;
   }
 };
 

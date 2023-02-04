@@ -91,6 +91,10 @@ body{
     text-align: center;
   }
   
+  #life-container{
+    text-align: center;
+  }
+
   #game-over{
       text-align: center;
       display: none;
