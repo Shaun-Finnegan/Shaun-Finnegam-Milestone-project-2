@@ -122,6 +122,7 @@ function gameLoop (){
     wallFive();
     wallSix();
     maxPoints();
+    noLifeLeft();
     requestAnimationFrame(gameLoop);
 };
 
@@ -330,6 +331,22 @@ function fox1Collision (){
        bunnyGrunt.play();
        livesLeft--;
        lives.innerHTML = livesLeft;
+  }
+};
+
+function noLifeLeft(){
+  if (livesLeft === 0){
+    canvas.style.backgroundColor = 'black';
+    gameOver.style.display = 'block';
+    newGame.style.display = 'block';
+    canvas.style.display = 'none';
+    youLoseRabbit.style.display = 'block';
+   upArrow.style.display = 'none';
+     rightArrow.style.display = 'none';
+     downArrow.style.display = 'none';
+     leftArrow.style.display = 'none';
+    gameOverAudio.play();
+    morningBirds.stop();
   }
 };
 
