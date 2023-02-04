@@ -11,6 +11,9 @@ let result = 0;
 const time = document.getElementById('time');
 let timeLeft = 60;
 
+const lives = document.getElementById('lives');
+let livesLeft = 5;
+
 const gameOver = document.getElementById('game-over');
 const youWin = document.getElementById('you-win');
 const newGame = document.getElementById('restart-button');
@@ -133,6 +136,7 @@ function gameLoop (){
     wallFive();
     wallSix();
     maxPoints();
+    noLifeLeft();
     requestAnimationFrame(gameLoop);
 };
 
@@ -198,9 +202,6 @@ function wallFive(){
 function wallSix(){
   ctx.fillRect(wallSixX, wallSixY, 20, 300);
 };
-
-
-
 
 
 
@@ -351,6 +352,8 @@ function fox1Collision (){
        y <= fox1Y + 60)){
          x = 0;
          bunnyGrunt.play();
+         livesLeft--;
+         lives.innerHTML = livesLeft;
     }
 };
 
@@ -361,8 +364,28 @@ function fox2Collision (){
        y <= fox2Y + 60)){
          x = 0;
          bunnyGrunt.play();
+         livesLeft--;
+         lives.innerHTML = livesLeft;
     }
 };
+
+function noLifeLeft(){
+  if (livesLeft === 0){
+    canvas.style.backgroundColor = 'black';
+    gameOver.style.display = 'block';
+    newGame.style.display = 'block';
+    canvas.style.display = 'none';
+    youLoseRabbit.style.display = 'block';
+   upArrow.style.display = 'none';
+     rightArrow.style.display = 'none';
+     downArrow.style.display = 'none';
+     leftArrow.style.display = 'none';
+    morningBirds.pause();
+    gameOverAudio.play();
+    livesLeft = 5;
+  }
+};
+
 
 
 function inputs (){
