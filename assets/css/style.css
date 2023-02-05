@@ -180,6 +180,11 @@ body{
       display: none;
       text-align: center;
     }
+
+    #super-brocoli{
+      width: 100px;
+      height: 100px;
+    }
   
   @media screen and (max-width: 700px) {
      #canvas{
