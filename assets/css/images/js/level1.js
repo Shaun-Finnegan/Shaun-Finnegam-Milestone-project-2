@@ -202,11 +202,12 @@ function drawSuperBrocoli(){
  x <= superBrocoliX + 60 &&
  y <= superBrocoliY + 60){
    brocoliTime = false;
-    superBrocoli.src = '';
-    rabbitAudio.play();
+    superBrocoliX = Math.floor(Math.random()*10) - 1000;
+    superBrocoliY =  Math.floor(Math.random()*10) - 1000;
+    livesLeft = livesLeft + 1;
+    lives.innerHTML = livesLeft;
+    
  }
-
-
 };
 
 
