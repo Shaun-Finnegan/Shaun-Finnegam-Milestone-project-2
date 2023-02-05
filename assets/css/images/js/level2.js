@@ -156,7 +156,7 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.stop();
+   morningBirds.pause();
   }
 };
 
@@ -174,7 +174,7 @@ function maxPoints(){
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      celebrate.play();
-     morningBirds.stop();
+     morningBirds.pause();
     }
 };
 

@@ -68,9 +68,6 @@ mainSprite.src = 'assets/css/images/main-rabbit.png'
 let carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
-let brocolli = new Image();
-brocolli.src = 'assets/css/images/brocolli.png';
-
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 
@@ -100,7 +97,6 @@ let fox1Height = 80;
 
 let fox1Speed = 2;
 
-let brocolliTime = false;
 
 //Input variables
 let upPressed = false;
@@ -134,8 +130,6 @@ function gameLoop (){
     wallSix();
     maxPoints();
     noLifeLeft();
-    drawBrocoli();
-    eatBrocoli();
     requestAnimationFrame(gameLoop);
 };
 
@@ -155,7 +149,7 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.stop();
+   morningBirds.pause();
   }
 };
 
@@ -173,7 +167,7 @@ function maxPoints(){
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      celebrate.play();
-     morningBirds.stop();
+     morningBirds.pause();
     }
 };
 
@@ -365,24 +359,8 @@ function noLifeLeft(){
 };
 
 
-function drawBrocoli(){
- if(timeLeft > 20 && timeLeft < 30){
-  brocolliTime = true;
- }
- if(brocolliTime){
-    ctx.drawImage(brocolli, 0, 0, 100, 100, brocoliX, brocoliY, brocoliWidth, brocoliHeight)
- }
 
-};
 
-function eatBrocoli (){
-   if(x + 60 >= brocoliX  &&
-    y + 60 >= brocoliY &&
-   x <= brocoliX + 60 &&
-   y <= brocoliY + 60){
-      rabbitAudio.play();
-   }
-};
 
 
 
