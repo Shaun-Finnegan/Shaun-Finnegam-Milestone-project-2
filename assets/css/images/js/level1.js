@@ -47,6 +47,9 @@ let brocoliY = 100;
 let brocoliWidth = 100;
 let brocoliHeight = 100;
 
+let brocoliOffScreenX = 1000;
+let brocoliOffScreenY = 1000;
+
 
 
 let wallOneX = 400;
@@ -103,7 +106,9 @@ let superBrocoliX = 1000;
 let superBrocoliY = 1000;
 let superBrocoliWidth = 80;
 let superBrocoliHeight = 80;
-let superBrocoliSpeed = 2;
+ let brocoliTime = false;
+
+
 
 
 
@@ -186,14 +191,24 @@ function maxPoints(){
 
 function drawSuperBrocoli(){
   ctx.drawImage(superBrocoli, 0, 0, 100, 100, superBrocoliX, superBrocoliY, superBrocoliWidth, superBrocoliHeight);
-  if(timeLeft < 30 && timeLeft >= 20){
+  if(timeLeft < 60  ){
      superBrocoliX = 700;
      superBrocoliY = 0;
-  } else{
-    superBrocoliX = 1000;
-    superBrocoliY = 1000;
-  }
+     brocoliTime = true;
+ } 
+
+ if( x + 60 >= superBrocoliX  &&
+  y + 60 >= superBrocoliY &&
+ x <= superBrocoliX + 60 &&
+ y <= superBrocoliY + 60){
+   brocoliTime = false;
+    superBrocoli.src = '';
+    rabbitAudio.play();
+ }
+
+
 };
+
 
 
 
