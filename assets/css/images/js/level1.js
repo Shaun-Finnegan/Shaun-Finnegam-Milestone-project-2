@@ -68,6 +68,9 @@ mainSprite.src = 'assets/css/images/main-rabbit.png'
 let carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
+const superBrocoli = new Image();
+superBrocoli.src = 'assets/css/images/super-brocoli.png';
+
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 
@@ -94,8 +97,14 @@ let fox1X = 500;
 let fox1Y = 300;
 let fox1Width = 80;
 let fox1Height = 80;
-
 let fox1Speed = 2;
+
+let superBrocoliX = 1000;
+let superBrocoliY = 1000;
+let superBrocoliWidth = 80;
+let superBrocoliHeight = 80;
+let superBrocoliSpeed = 2;
+
 
 
 
@@ -121,6 +130,7 @@ function gameLoop (){
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
     ctx.drawImage(fox1, 0, 0 , 100, 100, fox1X, fox1Y, fox1Width, fox1Height);
+    drawSuperBrocoli();
     fox1WallCol();
     fox1Collision();
    wallOne();
@@ -133,6 +143,8 @@ function gameLoop (){
     noLifeLeft();
     requestAnimationFrame(gameLoop);
 };
+
+
 
 
 function countDown(){
@@ -171,6 +183,19 @@ function maxPoints(){
      morningBirds.pause();
     }
 };
+
+function drawSuperBrocoli(){
+  ctx.drawImage(superBrocoli, 0, 0, 100, 100, superBrocoliX, superBrocoliY, superBrocoliWidth, superBrocoliHeight);
+  if(timeLeft < 30 && timeLeft >= 20){
+     superBrocoliX = 700;
+     superBrocoliY = 0;
+  } else{
+    superBrocoliX = 1000;
+    superBrocoliY = 1000;
+  }
+};
+
+
 
 
 
