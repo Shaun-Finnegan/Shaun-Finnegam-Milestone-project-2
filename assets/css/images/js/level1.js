@@ -411,25 +411,25 @@ leftArrow.addEventListener('mouseup', mobileLeftMouseUp);
 function mobileUpMouseDown(e){
  if(e.type === 'mousedown'){
    mobileMoveUp = true;
-   upArrow.style.backgroundColor = 'red';
+   upArrow.style.backgroundColor = 'orange';
  } 
 };
 function mobileRightMouseDown(e){
 if(e.type === 'mousedown'){
   mobileMoveRight = true;
-  rightArrow.style.backgroundColor = 'red';
+  rightArrow.style.backgroundColor = 'orange';
 }
 };
 function mobileDownMouseDown(e){
 if(e.type === 'mousedown'){
     mobileMoveDown = true;
-    downArrow.style.backgroundColor = 'red';
+    downArrow.style.backgroundColor = 'orange';
   }
 };
 function mobileLeftMouseDown(e){
  if(e.type === 'mousedown'){
   mobileMoveLeft = true;
-  leftArrow.style.backgroundColor = 'red';
+  leftArrow.style.backgroundColor = 'orange';
  }
 };
 

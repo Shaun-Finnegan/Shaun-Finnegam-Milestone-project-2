@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: blue;
+    background-color: green;
 }
 
 .main-img-container{
@@ -42,11 +42,11 @@ body{
 }
 
 #instruction-btn:hover{
-    background: red;
+    background: orange;
 }
 
 .start-game-btn:hover{
-    background: red;
+    background: orange;
 }
 
 #instructions-text{
