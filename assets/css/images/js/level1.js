@@ -71,9 +71,6 @@ mainSprite.src = 'assets/css/images/main-rabbit.png'
 let carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
-const superBrocoli = new Image();
-superBrocoli.src = 'assets/css/images/super-brocoli.png';
-
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 
@@ -102,16 +99,6 @@ let fox1Width = 80;
 let fox1Height = 80;
 let fox1Speed = 2;
 
-let superBrocoliX = 1000;
-let superBrocoliY = 1000;
-let superBrocoliWidth = 80;
-let superBrocoliHeight = 80;
- let brocoliTime = false;
-
-
-
-
-
 
 //Input variables
 let upPressed = false;
@@ -135,7 +122,6 @@ function gameLoop (){
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
     ctx.drawImage(fox1, 0, 0 , 100, 100, fox1X, fox1Y, fox1Width, fox1Height);
-    drawSuperBrocoli();
     fox1WallCol();
     fox1Collision();
    wallOne();
@@ -189,26 +175,6 @@ function maxPoints(){
     }
 };
 
-function drawSuperBrocoli(){
-  ctx.drawImage(superBrocoli, 0, 0, 100, 100, superBrocoliX, superBrocoliY, superBrocoliWidth, superBrocoliHeight);
-  if(timeLeft < 60  ){
-     superBrocoliX = 700;
-     superBrocoliY = 0;
-     brocoliTime = true;
- } 
-
- if( x + 60 >= superBrocoliX  &&
-  y + 60 >= superBrocoliY &&
- x <= superBrocoliX + 60 &&
- y <= superBrocoliY + 60){
-   brocoliTime = false;
-    superBrocoliX = Math.floor(Math.random()*10) - 1000;
-    superBrocoliY =  Math.floor(Math.random()*10) - 1000;
-    livesLeft = livesLeft + 1;
-    lives.innerHTML = livesLeft;
-    
- }
-};
 
 
 
