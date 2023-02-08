@@ -108,6 +108,9 @@ let rightPressed = false;
 
 let speed = 5;
 let enemySpeed = 2;
+
+
+
 //Game Loop with functions
 
 function gameLoop (){
