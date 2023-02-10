@@ -179,14 +179,11 @@ function maxPoints(){
 };
 
 
-
-
-
-
-
 function wallOne(){
   ctx.fillRect(wallOneX, wallOneY, 20, 150);
 };
+
+
 
 function wallTwo(){
   ctx.fillRect(wallTwoX, wallTwoY, 20 ,100);
@@ -369,11 +366,6 @@ function noLifeLeft(){
     livesLeft = 5;
   }
 };
-
-
-
-
-
 
 
 function inputs (){
