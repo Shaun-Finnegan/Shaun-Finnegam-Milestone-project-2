@@ -269,27 +269,27 @@ if(x === 150  && y > 50 ){
 };
 
 function backWallCol(){
-  if(x === 370  && y < 150 ){
+  if(x === 380  && y < 150 ){
     x = 0;
     boingAudio.play();
  }
- if(x === 370 && y > 250 ){
+ if(x === 380 && y > 250 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 570 && y < 200 ){
+if(x === 580 && y < 200 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 770 && y < 150 ){
+if(x === 780 && y < 150 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 770  && y > 250 ){
+if(x === 780  && y > 250 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 170  && y > 50 ){
+if(x === 180  && y > 50 ){
   x = 0;
   boingAudio.play();
 }
@@ -368,20 +368,7 @@ function noLifeLeft(){
 };
 
 
-function inputs (){
-  if (upPressed){
-     y = y - speed;
-  }
-  if(downPressed){
-    y = y + speed;
-  }
-  if (leftPressed){
-    x = x - speed;
- }
- if(rightPressed){
-   x = x + speed;
- }
-};
+
 
 
 
@@ -399,6 +386,23 @@ upArrow.addEventListener('mouseup', mobileUpMouseUp);
 rightArrow.addEventListener('mouseup', mobileRightMouseUp);
 downArrow.addEventListener('mouseup', mobileDownMouseUp);
 leftArrow.addEventListener('mouseup', mobileLeftMouseUp);
+
+
+
+function inputs (){
+  if (upPressed){
+     y = y - speed;
+  }
+  if(downPressed){
+    y = y + speed;
+  }
+  if (leftPressed){
+    x = x - speed;
+ }
+ if(rightPressed){
+   x = x + speed;
+ }
+};
 
 
 
