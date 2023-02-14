@@ -112,7 +112,7 @@ let rightPressed = false;
 let speed = 5;
 let enemySpeed = 2;
 
-
+const noBrocoli = [];
 const superBrocoliArray = [];
 let superBrocoliX = 400;
 let superBrocoliY = 10;
@@ -371,15 +371,16 @@ function drawSBrocoli(){
         y + 60 >= superBrocoliY &&
        x <= superBrocoliX + 60 &&
        y <= superBrocoliY + 60){
-             console.log('bang');
+               superBrocoli.src = '';
+               superBrocoliX = 1000;
+               superBrocoliArray.pop();
+               livesLeft ++;
+               lives.innerHTML = livesLeft;
+
       }
       console.log(superBrocoliArray.length);
     }
 };
-
-
-
-
 
 
 function noLifeLeft(){
