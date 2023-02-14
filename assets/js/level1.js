@@ -93,6 +93,9 @@ let morningBirds = new Audio();
 morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
 morningBirds.play();
 
+let eatBrocoli = new Audio();
+eatBrocoli.src = 'assets/css/images/audio/notification-for-game-scenes-132473.mp3';
+
 const fox1 = new Image();
 fox1.src = 'assets/css/images/foxenemy.png';
 
@@ -376,7 +379,7 @@ function drawSBrocoli(){
                superBrocoliArray.pop();
                livesLeft ++;
                lives.innerHTML = livesLeft;
-
+               eatBrocoli.play();
       }
       console.log(superBrocoliArray.length);
     }
