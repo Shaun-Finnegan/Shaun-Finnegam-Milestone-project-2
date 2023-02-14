@@ -71,6 +71,9 @@ mainSprite.src = 'assets/css/images/main-rabbit.png'
 let carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
+let superBrocoli = new Image();
+superBrocoli.src = 'assets/css/images/super-brocoli.png'
+
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 
@@ -110,6 +113,12 @@ let speed = 5;
 let enemySpeed = 2;
 
 
+const superBrocoliArray = [];
+let superBrocoliX = 400;
+let superBrocoliY = 10;
+let superBrocoliWidth = 100;
+let superBrocoliHeight = 100;
+
 
 //Game Loop with functions
 
@@ -125,6 +134,7 @@ function gameLoop (){
     ctx.drawImage(mainSprite, 0, 0, 575, 523, x, y, rabbitWidth, rabbitHeight);
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
     ctx.drawImage(fox1, 0, 0 , 100, 100, fox1X, fox1Y, fox1Width, fox1Height);
+    drawSBrocoli();
     fox1WallCol();
     fox1Collision();
    wallOne();
@@ -349,6 +359,22 @@ function fox1Collision (){
   }
 };
 
+function drawSBrocoli(){
+   if(timeLeft < 50 && timeLeft > 40){
+    ctx.drawImage(superBrocoli, 0, 0, 100, 100, superBrocoliX, superBrocoliY, superBrocoliWidth, superBrocoliHeight);
+    superBrocoliArray.push(superBrocoli);
+   }
+    if(superBrocoliArray.length >= 2){
+      superBrocoliArray.pop();
+
+      console.log(superBrocoliArray.length);
+    }
+};
+
+
+
+
+
 
 function noLifeLeft(){
   if (livesLeft === 0){
@@ -403,8 +429,6 @@ function inputs (){
    x = x + speed;
  }
 };
-
-
 
 
 function mobileUpMouseDown(e){
