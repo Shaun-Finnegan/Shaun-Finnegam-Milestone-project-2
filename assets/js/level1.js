@@ -367,6 +367,12 @@ function drawSBrocoli(){
     if(superBrocoliArray.length >= 2){
       superBrocoliArray.pop();
 
+      if(x + 60 >= superBrocoliX  &&
+        y + 60 >= superBrocoliY &&
+       x <= superBrocoliX + 60 &&
+       y <= superBrocoliY + 60){
+             console.log('bang');
+      }
       console.log(superBrocoliArray.length);
     }
 };
