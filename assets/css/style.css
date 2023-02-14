@@ -34,6 +34,19 @@ body{
     border-radius: 5%;
 }
 
+#instructions-text{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#close-instructions{
+  margin-top: 5px;
+  }
+
+  #close-instructions:hover{
+    background-color: orange;
+  }
+
 .start-game-btn-container{
     text-align: center;
     margin-top: 30px;
