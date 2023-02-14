@@ -74,6 +74,9 @@ carrot.src = 'assets/css/images/carrots.png';
 let superBrocoli = new Image();
 superBrocoli.src = 'assets/css/images/super-brocoli.png'
 
+let lettuce = new Image();
+lettuce.src = 'assets/css/images/lettuce time extension (1).png';
+
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
 
@@ -121,6 +124,12 @@ let superBrocoliX = 400;
 let superBrocoliY = 10;
 let superBrocoliWidth = 100;
 let superBrocoliHeight = 100;
+
+let lettuceX = 700;
+let lettuceY = 330;
+let lettuceWidth = 100;
+let lettuceHeight = 100;
+
 
 
 //Game Loop with functions
@@ -363,7 +372,7 @@ function fox1Collision (){
 };
 
 function drawSBrocoli(){
-   if(timeLeft < 50 && timeLeft > 40){
+   if(timeLeft < 20 && timeLeft > 10){
     ctx.drawImage(superBrocoli, 0, 0, 100, 100, superBrocoliX, superBrocoliY, superBrocoliWidth, superBrocoliHeight);
     superBrocoliArray.push(superBrocoli);
    }
@@ -386,6 +395,8 @@ function drawSBrocoli(){
 };
 
 
+
+
 function noLifeLeft(){
   if (livesLeft === 0){
     canvas.style.backgroundColor = 'black';
@@ -404,10 +415,6 @@ function noLifeLeft(){
 };
 
 
-
-
-
-
 function clearScreen(){
     ctx.clearRect(0, 0, canvas_width, canvas_height);
 };
@@ -423,22 +430,6 @@ rightArrow.addEventListener('mouseup', mobileRightMouseUp);
 downArrow.addEventListener('mouseup', mobileDownMouseUp);
 leftArrow.addEventListener('mouseup', mobileLeftMouseUp);
 
-
-
-function inputs (){
-  if (upPressed){
-     y = y - speed;
-  }
-  if(downPressed){
-    y = y + speed;
-  }
-  if (leftPressed){
-    x = x - speed;
- }
- if(rightPressed){
-   x = x + speed;
- }
-};
 
 
 function mobileUpMouseDown(e){
@@ -541,6 +532,22 @@ function keyUp(event){
   if( event.keyCode == 39){
     rightPressed = false;
   }
+};
+
+
+function inputs (){
+  if (upPressed){
+     y = y - speed;
+  }
+  if(downPressed){
+    y = y + speed;
+  }
+  if (leftPressed){
+    x = x - speed;
+ }
+ if(rightPressed){
+   x = x + speed;
+ }
 };
 
 gameLoop();
