@@ -444,63 +444,63 @@ function clearScreen(){
 
 document.body.addEventListener('keydown', keyDown);
 document.body.addEventListener('keyup', keyUp);
-upArrow.addEventListener('mousedown', mobileUpMouseDown);
-rightArrow.addEventListener('mousedown', mobileRightMouseDown);
-downArrow.addEventListener('mousedown', mobileDownMouseDown);
-leftArrow.addEventListener('mousedown', mobileLeftMouseDown);
-upArrow.addEventListener('mouseup', mobileUpMouseUp);
-rightArrow.addEventListener('mouseup', mobileRightMouseUp);
-downArrow.addEventListener('mouseup', mobileDownMouseUp);
-leftArrow.addEventListener('mouseup', mobileLeftMouseUp);
+upArrow.addEventListener('touchstart', mobileUpMouseDown);
+rightArrow.addEventListener('touchstart', mobileRightMouseDown);
+downArrow.addEventListener('touchstart', mobileDownMouseDown);
+leftArrow.addEventListener('touchstart', mobileLeftMouseDown);
+upArrow.addEventListener('touchend', mobileUpMouseUp);
+rightArrow.addEventListener('touchend', mobileRightMouseUp);
+downArrow.addEventListener('touchend', mobileDownMouseUp);
+leftArrow.addEventListener('touchend', mobileLeftMouseUp);
 
 
 
 
 function mobileUpMouseDown(e){
- if(e.type === 'mousedown'){
+ if(e.type === 'touchstart'){
    mobileMoveUp = true;
    upArrow.style.backgroundColor = 'orange';
  } 
 };
 function mobileRightMouseDown(e){
-if(e.type === 'mousedown'){
+if(e.type === 'touchstart'){
   mobileMoveRight = true;
   rightArrow.style.backgroundColor = 'orange';
 }
 };
 function mobileDownMouseDown(e){
-if(e.type === 'mousedown'){
+if(e.type === 'touchstart'){
     mobileMoveDown = true;
     downArrow.style.backgroundColor = 'orange';
   }
 };
 function mobileLeftMouseDown(e){
- if(e.type === 'mousedown'){
+ if(e.type === 'touchstart'){
   mobileMoveLeft = true;
   leftArrow.style.backgroundColor = 'orange';
  }
 };
 
 function mobileUpMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveUp =  false;
    upArrow.style.backgroundColor = 'white';
   }
 };
 function mobileRightMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveRight = false;
    rightArrow.style.backgroundColor = 'white';
   }
 };
 function mobileDownMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveDown = false;
    downArrow.style.backgroundColor = 'white';
   }
 };
 function mobileLeftMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveLeft = false;
    leftArrow.style.backgroundColor = 'white';
   }
