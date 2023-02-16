@@ -433,50 +433,50 @@ leftArrow.addEventListener('touchend', mobileLeftMouseUp);
 
 
 function mobileUpMouseDown(e){
- if(e.type === 'mousedown'){
+ if(e.type === 'touchstart'){
    mobileMoveUp = true;
    upArrow.style.backgroundColor = 'orange';
  } 
 };
 function mobileRightMouseDown(e){
-if(e.type === 'mousedown'){
+if(e.type === 'touchstart'){
   mobileMoveRight = true;
   rightArrow.style.backgroundColor = 'orange';
 }
 };
 function mobileDownMouseDown(e){
-if(e.type === 'mousedown'){
+if(e.type === 'touchstart'){
     mobileMoveDown = true;
     downArrow.style.backgroundColor = 'orange';
   }
 };
 function mobileLeftMouseDown(e){
- if(e.type === 'mousedown'){
+ if(e.type === 'touchstart'){
   mobileMoveLeft = true;
   leftArrow.style.backgroundColor = 'orange';
  }
 };
 
 function mobileUpMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveUp =  false;
    upArrow.style.backgroundColor = 'white';
   }
 };
 function mobileRightMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveRight = false;
    rightArrow.style.backgroundColor = 'white';
   }
 };
 function mobileDownMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveDown = false;
    downArrow.style.backgroundColor = 'white';
   }
 };
 function mobileLeftMouseUp(e){
-  if(e.type === 'mouseup'){
+  if(e.type === 'touchend'){
    mobileMoveLeft = false;
    leftArrow.style.backgroundColor = 'white';
   }
