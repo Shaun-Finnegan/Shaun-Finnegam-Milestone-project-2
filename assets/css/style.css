@@ -203,6 +203,7 @@ body{
       border-color: black;
       background: white;
       margin-top: 50px;
+      margin-bottom: 10px;
       }
     #right{
       display: none;
@@ -214,6 +215,7 @@ body{
       border-style: solid;
       border-color: black;
       margin-top: 50px;
+      margin-left: 10px;
       }
     #down{
       display: none;
@@ -236,6 +238,7 @@ body{
       border-style: solid;
       border-color: black;
       margin-top: 50px;
+      margin-right: 5px;
     }
 
   
