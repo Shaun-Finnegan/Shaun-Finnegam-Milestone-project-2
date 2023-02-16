@@ -421,14 +421,14 @@ function clearScreen(){
 
 document.body.addEventListener('keydown', keyDown);
 document.body.addEventListener('keyup', keyUp);
-upArrow.addEventListener('mousedown', mobileUpMouseDown);
-rightArrow.addEventListener('mousedown', mobileRightMouseDown);
-downArrow.addEventListener('mousedown', mobileDownMouseDown);
-leftArrow.addEventListener('mousedown', mobileLeftMouseDown);
-upArrow.addEventListener('mouseup', mobileUpMouseUp);
-rightArrow.addEventListener('mouseup', mobileRightMouseUp);
-downArrow.addEventListener('mouseup', mobileDownMouseUp);
-leftArrow.addEventListener('mouseup', mobileLeftMouseUp);
+upArrow.addEventListener('touchstart', mobileUpMouseDown);
+rightArrow.addEventListener('touchstart', mobileRightMouseDown);
+downArrow.addEventListener('touchstart', mobileDownMouseDown);
+leftArrow.addEventListener('touchstart', mobileLeftMouseDown);
+upArrow.addEventListener('touchend', mobileUpMouseUp);
+rightArrow.addEventListener('touchend', mobileRightMouseUp);
+downArrow.addEventListener('touchend', mobileDownMouseUp);
+leftArrow.addEventListener('touchend', mobileLeftMouseUp);
 
 
 
