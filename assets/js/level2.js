@@ -73,6 +73,9 @@ mainSprite.src = 'assets/css/images/main-rabbit.png'
 carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
+let superBrocoli = new Image();
+superBrocoli.src = 'assets/css/images/super-brocoli.png';
+
 const fox1 = new Image();
 fox1.src = 'assets/css/images/foxenemy.png';
 
@@ -96,6 +99,9 @@ celebrate.src ='assets/css/images/audio/crowd-cheer-ii-6263.mp3';
 gameOverAudio = new Audio();
 gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3'
 
+let eatBrocoli = new Audio();
+eatBrocoli.src = 'assets/css/images/audio/notification-for-game-scenes-132473.mp3';
+
 morningBirds = new Audio();
 morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
 morningBirds.play();
@@ -110,6 +116,15 @@ let speed = 5;
 let enemySpeed = 2;
 let fox1Speed = 2;
 let fox2Speed = 2;
+
+const noBrocoli = [];
+const superBrocoliArray = [];
+let superBrocoliX = 400;
+let superBrocoliY = 10;
+let superBrocoliWidth = 100;
+let superBrocoliHeight = 100;
+
+
 //Game Loop with functions
 
 function gameLoop (){
@@ -125,6 +140,7 @@ function gameLoop (){
     ctx.drawImage(carrot, 0, 0, 100, 100, enemyX, enemyY, enemyWidth, enemyHeight);
     ctx.drawImage(fox1, 0, 0 , 100, 100, fox1X, fox1Y, fox1Width, fox1Height);
     ctx.drawImage(fox2, 0, 0 , 100, 100, fox2X, fox2Y, fox2Width, fox2Height);
+    drawSBrocoli();
     fox1WallCol();
     fox2WallCol();
     fox1Collision();
@@ -267,27 +283,27 @@ if(x === 150 && y > 50 ){
 
 
 function backWallCol(){
-  if(x === 370  && y < 150 ){
+  if(x === 380  && y  < 150 ){
     x = 0;
     boingAudio.play();
  }
- if(x === 370 && y > 250 ){
+ if(x === 380 && y > 250 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 570 && y < 200 ){
+if(x === 580 && y < 200 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 770 && y < 150 ){
+if(x === 780 && y < 150 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 770  && y > 250 ){
+if(x === 780  && y > 250 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 170  && y > 50 ){
+if(x === 180  && y  > 50 ){
   x = 0;
   boingAudio.play();
 }
@@ -367,6 +383,30 @@ function fox2Collision (){
          livesLeft--;
          lives.innerHTML = livesLeft;
     }
+};
+
+
+function drawSBrocoli(){
+  if(timeLeft < 20 && timeLeft > 10){
+   ctx.drawImage(superBrocoli, 0, 0, 100, 100, superBrocoliX, superBrocoliY, superBrocoliWidth, superBrocoliHeight);
+   superBrocoliArray.push(superBrocoli);
+  }
+   if(superBrocoliArray.length >= 2){
+     superBrocoliArray.pop();
+
+     if(x + 60 >= superBrocoliX  &&
+       y + 60 >= superBrocoliY &&
+      x <= superBrocoliX + 60 &&
+      y <= superBrocoliY + 60){
+              superBrocoli.src = '';
+              superBrocoliX = 1000;
+              superBrocoliArray.pop();
+              livesLeft ++;
+              lives.innerHTML = livesLeft;
+              eatBrocoli.play();
+     }
+     console.log(superBrocoliArray.length);
+   }
 };
 
 function noLifeLeft(){
