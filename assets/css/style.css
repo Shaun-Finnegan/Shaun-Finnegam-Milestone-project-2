@@ -189,14 +189,14 @@ body{
       right: 0;
       margin: auto;
       margin-top: 10%;
-      margin-bottom: 5%;
+      margin-bottom: 30%;
     }
   
     #up{
       display: none;
       position: absolute;
       right: 45%;
-      bottom: 25px;
+      bottom: 100px;
       width: 10%;
       border-style: solid;
       border-color: black;
@@ -207,7 +207,7 @@ body{
       display: none;
       position: absolute;
       right:30%;
-      bottom: 15%;
+      bottom: 75px;
       width: 10%;
       border-style: solid;
       border-color: black;
@@ -217,7 +217,7 @@ body{
       display: none;
       position: absolute;
       right:45%;
-      bottom:0;
+      bottom:50px;
       width: 10%;
       border-style: solid;
       border-color: black;
@@ -227,7 +227,7 @@ body{
       display: none;
       position: absolute;
       right:60%;
-      bottom: 20%;
+      bottom: 75px;
       width: 10%;
       border-style: solid;
       border-color: black;
