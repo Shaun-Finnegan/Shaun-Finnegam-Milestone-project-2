@@ -72,7 +72,7 @@ let carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
 let superBrocoli = new Image();
-superBrocoli.src = 'assets/css/images/super-brocoli.png'
+superBrocoli.src = 'assets/css/images/super-brocoli.png';
 
 let lettuce = new Image();
 lettuce.src = 'assets/css/images/lettuce time extension (1).png';
@@ -98,6 +98,9 @@ morningBirds.play();
 
 let eatBrocoli = new Audio();
 eatBrocoli.src = 'assets/css/images/audio/notification-for-game-scenes-132473.mp3';
+
+let countDownClock = new Audio();
+countDownClock.src = 'assets/css/images/audio/countdown clock.mp3';
 
 const fox1 = new Image();
 fox1.src = 'assets/css/images/foxenemy.png';
@@ -157,6 +160,7 @@ function gameLoop (){
     wallSix();
     maxPoints();
     noLifeLeft();
+    timeLow();
     requestAnimationFrame(gameLoop);
 };
 
@@ -178,7 +182,8 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.pause();
+   morningBirds.src = '';
+   countDownClock.src = '';
   }
 };
 
@@ -196,8 +201,20 @@ function maxPoints(){
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      celebrate.play();
-     morningBirds.pause();
+     morningBirds.src = '';
+     countDownClock.src = '';
     }
+};
+
+function timeLow(){
+  if(timeLeft <= 10){
+    canvas.style.backgroundColor = 'red';
+    countDownClock.play();
+   
+    if(timeLeft === 0 || result === 20  ){
+      countDownClock.src = '';
+    }
+ }
 };
 
 

@@ -102,6 +102,9 @@ gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3'
 let eatBrocoli = new Audio();
 eatBrocoli.src = 'assets/css/images/audio/notification-for-game-scenes-132473.mp3';
 
+let countDownClock = new Audio();
+countDownClock.src = 'assets/css/images/audio/countdown clock.mp3';
+
 morningBirds = new Audio();
 morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
 morningBirds.play();
@@ -152,6 +155,7 @@ function gameLoop (){
     wallFive();
     wallSix();
     maxPoints();
+    timeLow();
     noLifeLeft();
     requestAnimationFrame(gameLoop);
 };
@@ -172,7 +176,8 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.pause();
+   morningBirds.src = '';
+   countDownClock.src = '';
   }
 };
 
@@ -190,10 +195,21 @@ function maxPoints(){
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      celebrate.play();
-     morningBirds.pause();
+     morningBirds.src = '';
+     countDownClock.src = '';
     }
 };
 
+function timeLow(){
+  if(timeLeft <= 10){
+    canvas.style.backgroundColor = 'red';
+    countDownClock.play();
+   
+    if(timeLeft === 0 || result === 20){
+      countDownClock.src = '';
+    }
+ }
+};
 
 function wallOne(){
   ctx.fillRect(wallOneX, wallOneY, 20, 150);
