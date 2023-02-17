@@ -134,6 +134,11 @@ let superBrocoliWidth = 100;
 let superBrocoliHeight = 100;
 
 
+window.onload = function(){
+  morningBirds.play();
+};
+
+
 //Game Loop with functions
 
 function gameLoop (){
