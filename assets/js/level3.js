@@ -1,8 +1,8 @@
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 
- canvas_width = canvas.width = 1000;
- canvas_height = canvas.height = 400;
+let canvas_width = canvas.width = 1000;
+ let canvas_height = canvas.height = 400;
 
 
 const score = document.getElementById('score');
@@ -20,7 +20,6 @@ const newGame = document.getElementById('restart-button');
 const nextLevel = document.getElementById('nxt-level-button');
 const youLoseRabbit = document.getElementById('you-lose');
 const youWinRabbit = document.getElementById('you-win-rabbit');
-const btnDisappear = document.getElementsByClassName('direction-btn-container');
 const  upArrow = document.getElementById('up');
 const rightArrow = document.getElementById('right');
 const downArrow = document.getElementById('down');
@@ -74,12 +73,12 @@ let fox3Height = 80;
 
 
 const mainSprite = new Image();
-mainSprite.src = 'assets/css/images/main-rabbit.png'
+mainSprite.src = 'assets/css/images/main-rabbit.png';
 
-carrot = new Image();
+const carrot = new Image();
 carrot.src = 'assets/css/images/carrots.png';
 
-let superBrocoli = new Image();
+const superBrocoli = new Image();
 superBrocoli.src = 'assets/css/images/super-brocoli.png';
 
 const fox1 = new Image();
@@ -105,7 +104,7 @@ bunnyGrunt.src = 'assets/css/images/audio/bunny-grunt.mp3';
 let celebrate = new Audio ();
 celebrate.src ='assets/css/images/audio/crowd-cheer-ii-6263.mp3';
 
-gameOverAudio = new Audio();
+let gameOverAudio = new Audio();
 gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3';
 
 let eatBrocoli = new Audio();
@@ -114,7 +113,7 @@ eatBrocoli.src = 'assets/css/images/audio/notification-for-game-scenes-132473.mp
 let countDownClock = new Audio();
 countDownClock.src = 'assets/css/images/audio/countdown clock.mp3';
 
-morningBirds = new Audio();
+let morningBirds = new Audio();
 morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
 morningBirds.play();
 
@@ -125,12 +124,11 @@ let leftPressed = false;
 let rightPressed = false;
 
 let speed = 5;
-let enemySpeed = 2;
 let fox1Speed = 2;
 let fox2Speed = 2;
 let fox3Speed = 1;
 
-const noBrocoli = [];
+
 const superBrocoliArray = [];
 let superBrocoliX = 400;
 let superBrocoliY = 10;
@@ -171,7 +169,7 @@ function gameLoop (){
     noLifeLeft();
     timeLow();
     requestAnimationFrame(gameLoop);
-};
+}
 
 
 function countDown(){
@@ -192,7 +190,7 @@ function countDown(){
    morningBirds.src = '';
    countDownClock.src = '';
   }
-};
+}
 
 let timerDown = setInterval(countDown, 1000);
 
@@ -211,7 +209,7 @@ function maxPoints(){
      morningBirds.src = '';
      countDownClock.src = '';
     }
-};
+}
 
 function timeLow(){
   if(timeLeft <= 10){
@@ -222,32 +220,32 @@ function timeLow(){
       countDownClock.src = '';
     }
  }
-};
+}
 
 
 function wallOne(){
   ctx.fillRect(wallOneX, wallOneY, 20, 150);
-};
+}
 
 function wallTwo(){
   ctx.fillRect(wallTwoX, wallTwoY, 20 ,100);
-};
+}
 
 function wallThree(){
   ctx.fillRect(wallThreeX, wallThreeY, 20, 200);
-};
+}
 
 function wallFour(){
   ctx.fillRect(wallFourX, wallFourY, 20, 150);
-};
+}
 
 function wallFive(){
   ctx.fillRect(wallFiveX, wallFiveY, 20, 100);
-};
+}
 
 function wallSix(){
   ctx.fillRect(wallSixX, wallSixY, 20, 300);
-};
+}
 
 
 
@@ -264,7 +262,7 @@ function boundryCollision(){
  if(y >= 320){
     y = 320;
  }
-};
+}
 
 
 
@@ -282,7 +280,7 @@ if( enemyX >= 920){
 if(enemyY >= 320){
    enemyY = 320;
 }
-};
+}
 
 function wallCol(){
   if(x === 350 && y < 150 ){
@@ -309,7 +307,7 @@ if(x === 150 && y > 50 ){
   x = 0;
   boingAudio.play();
 }
-};
+}
 
 
 function backWallCol(){
@@ -337,7 +335,7 @@ if(x === 170  && y > 50 ){
   x = 0;
   boingAudio.play();
 }
-};
+}
 
 function fox1WallCol(){
     if(fox1Y  === 0 || fox1Y + 80 === 400){
@@ -345,7 +343,7 @@ function fox1WallCol(){
     }
     
      fox1Y += fox1Speed;
-    };
+    }
 
     function fox2WallCol(){
         if(fox2Y  === 0 || fox2Y + 80 === 400){
@@ -353,7 +351,7 @@ function fox1WallCol(){
         }
         
          fox2Y += fox2Speed;
-        };
+        }
 
         
     function fox3WallCol(){
@@ -362,7 +360,7 @@ function fox1WallCol(){
         }
         
          fox3Y += fox3Speed;
-        };
+        }
 
 
         function mainCollision(){
@@ -383,7 +381,7 @@ function fox1WallCol(){
                 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820];
              for (let i = 0; i < 1001; i++) {
                  xCoOrd.push(i);
-                };
+                }
         
                   let newX =  xCoOrd.filter(function(value){
                   return !deleteNums.includes(value);
@@ -398,7 +396,7 @@ function fox1WallCol(){
               score.innerHTML = result;
               rabbitAudio.play();
             }
-        };
+        }
 
 function fox1Collision (){
     if ((x + 60 >= fox1X  &&
@@ -410,7 +408,7 @@ function fox1Collision (){
          livesLeft--;
          lives.innerHTML = livesLeft;
     }
-};
+}
 
 function fox2Collision (){
     if ((x + 60 >= fox2X  &&
@@ -422,7 +420,7 @@ function fox2Collision (){
          livesLeft--;
          lives.innerHTML = livesLeft;
     }
-};
+}
 
 function fox3Collision (){
     if ((x + 60 >= fox3X  &&
@@ -434,7 +432,7 @@ function fox3Collision (){
          livesLeft--;
          lives.innerHTML = livesLeft;
     }
-};
+}
 
 function drawSBrocoli(){
   if(timeLeft < 20 && timeLeft > 10){
@@ -457,7 +455,7 @@ function drawSBrocoli(){
      }
      console.log(superBrocoliArray.length);
    }
-};
+}
 
 
 function noLifeLeft(){
@@ -475,7 +473,7 @@ function noLifeLeft(){
     gameOverAudio.play();
     livesLeft = 5;
   }
-};
+}
 
 
 
@@ -492,13 +490,13 @@ function inputs (){
  if(rightPressed){
    x = x + speed;
  }
-};
+}
 
 
 
 function clearScreen(){
     ctx.clearRect(0, 0, canvas_width, canvas_height);
-};
+}
 
 document.body.addEventListener('keydown', keyDown);
 document.body.addEventListener('keyup', keyUp);
@@ -519,50 +517,50 @@ function mobileUpMouseDown(e){
    mobileMoveUp = true;
    upArrow.style.backgroundColor = 'orange';
  } 
-};
+}
 function mobileRightMouseDown(e){
 if(e.type === 'touchstart'){
   mobileMoveRight = true;
   rightArrow.style.backgroundColor = 'orange';
 }
-};
+}
 function mobileDownMouseDown(e){
 if(e.type === 'touchstart'){
     mobileMoveDown = true;
     downArrow.style.backgroundColor = 'orange';
   }
-};
+}
 function mobileLeftMouseDown(e){
  if(e.type === 'touchstart'){
   mobileMoveLeft = true;
   leftArrow.style.backgroundColor = 'orange';
  }
-};
+}
 
 function mobileUpMouseUp(e){
   if(e.type === 'touchend'){
    mobileMoveUp =  false;
    upArrow.style.backgroundColor = 'white';
   }
-};
+}
 function mobileRightMouseUp(e){
   if(e.type === 'touchend'){
    mobileMoveRight = false;
    rightArrow.style.backgroundColor = 'white';
   }
-};
+}
 function mobileDownMouseUp(e){
   if(e.type === 'touchend'){
    mobileMoveDown = false;
    downArrow.style.backgroundColor = 'white';
   }
-};
+}
 function mobileLeftMouseUp(e){
   if(e.type === 'touchend'){
    mobileMoveLeft = false;
    leftArrow.style.backgroundColor = 'white';
   }
-};
+}
 
 function mobileInputs(){
   if(mobileMoveUp){
@@ -579,7 +577,7 @@ function mobileInputs(){
   if(mobileMoveLeft){
     x = x - speed;
   }
-};
+}
 
 
 function keyDown (event){
@@ -597,7 +595,7 @@ if( event.keyCode == 37){
 if( event.keyCode == 39){
   rightPressed = true;
 }
-};
+}
 
 function keyUp(event){
     if( event.keyCode == 40){
@@ -614,6 +612,6 @@ function keyUp(event){
   if( event.keyCode == 39){
     rightPressed = false;
   }
-};
+}
 
 gameLoop();

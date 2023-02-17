@@ -6,13 +6,13 @@ function showInstructions(){
     howToPlay.style.display = 'block';
     closeInstructions.style.display = 'block';
 
-};
+}
 
 function hideInstructions(){
     howToPlay.style.display = 'none';
     closeInstructions.style.display = 'none';
 
-};
+}
 
 instructionBtn.addEventListener('click', showInstructions);
 closeInstructions.addEventListener('click', hideInstructions);
