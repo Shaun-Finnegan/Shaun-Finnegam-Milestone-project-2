@@ -73,49 +73,47 @@ let fox3Height = 80;
 
 
 const mainSprite = new Image();
-mainSprite.src = 'assets/css/images/main-rabbit.png';
+mainSprite.src = 'assets/images/main-rabbit.png';
 
-const carrot = new Image();
-carrot.src = 'assets/css/images/carrots.png';
+let carrot = new Image();
+carrot.src = 'assets/images/carrots.png';
 
-const superBrocoli = new Image();
-superBrocoli.src = 'assets/css/images/super-brocoli.png';
-
-const fox1 = new Image();
-fox1.src = 'assets/css/images/foxenemy.png';
-
-const fox2 = new Image();
-fox2.src = 'assets/css/images/foxenemy.png';
-
-const fox3 = new Image();
-fox3.src = 'assets/css/images/foxenemy.png';
-
+let superBrocoli = new Image();
+superBrocoli.src = 'assets/images/super-brocoli.png';
 
 let rabbitAudio = new Audio();
-rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
-
-
-let boingAudio = new Audio ();
-boingAudio.src= 'assets/css/images/audio/boing-6222.mp3';
+rabbitAudio.src = 'assets/images/audio/rabbitEating.mp3';
 
 let bunnyGrunt = new Audio ();
-bunnyGrunt.src = 'assets/css/images/audio/bunny-grunt.mp3';
+bunnyGrunt.src = 'assets/images/audio/bunny-grunt.mp3';
+
+let boingAudio = new Audio ();
+boingAudio.src= 'assets/images/audio/boing-6222.mp3';
 
 let celebrate = new Audio ();
-celebrate.src ='assets/css/images/audio/crowd-cheer-ii-6263.mp3';
+celebrate.src ='assets/images/audio/crowd-cheer-ii-6263.mp3';
 
 let gameOverAudio = new Audio();
-gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3';
-
-let eatBrocoli = new Audio();
-eatBrocoli.src = 'assets/css/images/audio/notification-for-game-scenes-132473.mp3';
-
-let countDownClock = new Audio();
-countDownClock.src = 'assets/css/images/audio/countdown clock.mp3';
+gameOverAudio.src = 'assets/images/audio/game-over-arcade-6435.mp3';
 
 let morningBirds = new Audio();
-morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
-morningBirds.play();
+morningBirds.src = 'assets/images/audio/morning-birds.mp3';
+
+
+let eatBrocoli = new Audio();
+eatBrocoli.src = 'assets/images/audio/notification-for-game-scenes-132473.mp3';
+
+let countDownClock = new Audio();
+countDownClock.src = 'assets/images/audio/countdown clock.mp3';
+
+const fox1 = new Image();
+fox1.src = 'assets/images/foxenemy.png';
+
+const fox2 = new Image();
+fox2.src = 'assets/images/foxenemy.png';
+
+const fox3 = new Image();
+fox3.src = 'assets/images/foxenemy.png';
 
 //Input variables
 let upPressed = false;
@@ -195,20 +193,20 @@ function countDown(){
 let timerDown = setInterval(countDown, 1000);
 
 function maxPoints(){
-   if(result === 20 && timeLeft > 0){
-     youWin.style.display = 'block';
-     clearInterval(timerDown);
-     canvas.style.display = 'none';
-     nextLevel.style.display = 'block';
-     youWinRabbit.style.display = 'block';
-     upArrow.style.display = 'none';
-     rightArrow.style.display = 'none';
-     downArrow.style.display = 'none';
-     leftArrow.style.display = 'none';
-     celebrate.play();
-     morningBirds.src = '';
-     countDownClock.src = '';
-    }
+  if(result === 20 && timeLeft > 0){
+    youWin.style.display = 'block';
+    clearInterval(timerDown);
+    canvas.style.display = 'none';
+    nextLevel.style.display = 'block';
+    youWinRabbit.style.display = 'block';
+    upArrow.style.display = 'none';
+    rightArrow.style.display = 'none';
+    downArrow.style.display = 'none';
+    leftArrow.style.display = 'none';
+    celebrate.play();
+    morningBirds.src = '';
+    countDownClock.src = '';
+   }
 }
 
 function timeLow(){
@@ -311,27 +309,27 @@ if(x === 150 && y > 50 ){
 
 
 function backWallCol(){
-  if(x === 370  && y < 150 ){
+  if(x === 380  && y < 150 ){
     x = 0;
     boingAudio.play();
  }
- if(x === 370 && y > 250 ){
+ if(x === 380 && y > 250 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 570 && y < 200 ){
+if(x === 580 && y < 200 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 770 && y < 150 ){
+if(x === 780 && y < 150 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 770  && y > 250 ){
+if(x === 780  && y > 250 ){
   x = 0;
   boingAudio.play();
 }
-if(x === 170  && y > 50 ){
+if(x === 180  && y > 50 ){
   x = 0;
   boingAudio.play();
 }
@@ -471,6 +469,7 @@ function noLifeLeft(){
      leftArrow.style.display = 'none';
     morningBirds.pause();
     gameOverAudio.play();
+    countDownClock.src = '';
     livesLeft = 5;
   }
 }

@@ -67,46 +67,45 @@ let fox2Height = 80;
 
 
 const mainSprite = new Image();
-mainSprite.src = 'assets/css/images/main-rabbit.png';
+mainSprite.src = 'assets/images/main-rabbit.png';
 
-const carrot = new Image();
-carrot.src = 'assets/css/images/carrots.png';
+let carrot = new Image();
+carrot.src = 'assets/images/carrots.png';
 
-const superBrocoli = new Image();
-superBrocoli.src = 'assets/css/images/super-brocoli.png';
-
-const fox1 = new Image();
-fox1.src = 'assets/css/images/foxenemy.png';
-
-const fox2 = new Image();
-fox2.src = 'assets/css/images/foxenemy.png';
-
+let superBrocoli = new Image();
+superBrocoli.src = 'assets/images/super-brocoli.png';
 
 let rabbitAudio = new Audio();
-rabbitAudio.src = 'assets/css/images/audio/rabbitEating.mp3';
-
-
-let boingAudio = new Audio ();
-boingAudio.src= 'assets/css/images/audio/boing-6222.mp3';
+rabbitAudio.src = 'assets/images/audio/rabbitEating.mp3';
 
 let bunnyGrunt = new Audio ();
-bunnyGrunt.src = 'assets/css/images/audio/bunny-grunt.mp3';
+bunnyGrunt.src = 'assets/images/audio/bunny-grunt.mp3';
+
+let boingAudio = new Audio ();
+boingAudio.src= 'assets/images/audio/boing-6222.mp3';
 
 let celebrate = new Audio ();
-celebrate.src ='assets/css/images/audio/crowd-cheer-ii-6263.mp3';
+celebrate.src ='assets/images/audio/crowd-cheer-ii-6263.mp3';
 
 let gameOverAudio = new Audio();
-gameOverAudio.src = 'assets/css/images/audio/game-over-arcade-6435.mp3';
-
-let eatBrocoli = new Audio();
-eatBrocoli.src = 'assets/css/images/audio/notification-for-game-scenes-132473.mp3';
-
-let countDownClock = new Audio();
-countDownClock.src = 'assets/css/images/audio/countdown clock.mp3';
+gameOverAudio.src = 'assets/images/audio/game-over-arcade-6435.mp3';
 
 let morningBirds = new Audio();
-morningBirds.src = 'assets/css/images/audio/morning-birds.mp3';
-morningBirds.play();
+morningBirds.src = 'assets/images/audio/morning-birds.mp3';
+
+
+let eatBrocoli = new Audio();
+eatBrocoli.src = 'assets/images/audio/notification-for-game-scenes-132473.mp3';
+
+let countDownClock = new Audio();
+countDownClock.src = 'assets/images/audio/countdown clock.mp3';
+
+const fox1 = new Image();
+fox1.src = 'assets/images/foxenemy.png';
+
+
+const fox2 = new Image();
+fox2.src = 'assets/images/foxenemy.png';
 
 //Input variables
 let upPressed = false;
