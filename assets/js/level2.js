@@ -125,6 +125,11 @@ let superBrocoliWidth = 100;
 let superBrocoliHeight = 100;
 
 
+window.onload = function(){
+  morningBirds.play();
+};
+
+
 //Game Loop with functions
 
 function gameLoop (){
@@ -173,8 +178,8 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.src = '';
-   countDownClock.src = '';
+   morningBirds.pause();
+   countDownClock.pause();
   }
 }
 
@@ -192,8 +197,8 @@ function maxPoints(){
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      celebrate.play();
-     morningBirds.src = '';
-     countDownClock.src = '';
+     morningBirds.pause();
+     countDownClock.pause();
     }
 }
 
@@ -203,7 +208,7 @@ function timeLow(){
     countDownClock.play();
    
     if(timeLeft === 0 || result === 20){
-      countDownClock.src = '';
+      countDownClock.pause();;
     }
  }
 }
