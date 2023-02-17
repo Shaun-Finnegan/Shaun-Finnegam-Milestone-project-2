@@ -241,6 +241,19 @@ body{
       margin-right: 0px;
     }
 
+    #orientation-warning{
+      display: none;
+    }
+
+
+    #portrait-rabbit-container{
+      display: none;
+    }
+
+    #portrait-rabbit {
+      display: none;
+    }
+
   
   
   @media screen and (max-width: 912px) {
@@ -275,10 +288,68 @@ body{
   
   }
   
-  @media screen and (min-width: 400px){
-    .direction-btn-container{
-      margin-bottom: 2%;
-     }
+  @media only screen and (max-width: 896px) and (orientation: landscape){
+    #canvas1{
+      display: none;
+    }
+
+    #up{
+      display: none;
+    }
+
+    #right{
+      display: none;
+    }
+
+    #down{
+      display: none;
+    }
+
+    #left{
+      display: none;
+    }
+
+    #orientation-warning{
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    #portrait-rabbit-container{
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      
+    }
+
+    #portrait-rabbit{
+      display: block;
+    }
+
+    #score-container{
+      display: none;
+    }
+
+    #score{
+      display: none;
+    }
+
+    #life-container{
+      display: none;
+    }
+
+    #lives{
+      display: none;
+    }
+
+    #time-container{
+      display: none;
+    }
+
+    #time{
+      display: none;
+    }
   }
+ 
   
   
