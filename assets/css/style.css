@@ -84,6 +84,10 @@ body{
   background-color: #fff;
 }
 
+#nxt-level-button:hover{
+  background-color: #fff;
+}
+
 
 
 #container{
@@ -144,6 +148,8 @@ body{
     border: 1px solid #000;
     display: none;
   }
+
+
   
   #you-win{
       text-align: center;
