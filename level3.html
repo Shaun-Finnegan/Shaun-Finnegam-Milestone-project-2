@@ -4,57 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--font awesome cdn link-->
     <script src="https://kit.fontawesome.com/ef0705155e.js" crossorigin="anonymous"></script>
+    <!--link to style.css-->
     <link rel = 'stylesheet' href = 'assets/css/style.css'>
     <link rel="shortcut icon" href="#">
-
     <title>Bad Buck</title>
 </head>
 <body>
+     <!--the code below contains the html that tells the user whether they have won or lost-->
     <div id = 'container'></div>
-    <div id = 'game-over'>
+      <div id = 'game-over'>
         <h1>Game Over!!!</h1>
-    </div>
-    <div id = 'you-win'>
+      </div>
+      <div id = 'you-win'>
         <h1>Congratulations You Have Completed The Game!</h1>
-    </div>
-    <div id = 'score-container'>
-     <h2>Score:<span id ='score'>0</span></h2>
-    </div>
-    <div id = 'time-container'>
-     <h2>Time:  <span id = 'time'></span></h2>
+      </div>
+      <div id = 'score-container'>
+        <h2>Score:<span id ='score'>0</span></h2>
+     </div>
+     <!--The code below contains the html that will show the user 
+    their current score and current time remaining-->
+     <div id = 'time-container'>
+       <h2>Time:  <span id = 'time'></span></h2>
      </div>
      <div id = 'life-container'>
         <h2>Lives:   <span id = 'lives'>5</span></h2>
-        </div>
+     </div>
+      <!--This is where the canvas is initialized in which all the game play will take place-->
     <canvas id = 'canvas1'>
     </canvas>
-
+     <!--The two buttons below will only appear at the end of the game only one will appear and that will
+    depend on the outcome of the game-->
     <div class = 'btn-container'>
-     <button aria-label="back to home page" onclick="window.location.href= 'index.html' " id = 'restart-button'>New Game!</button>
+      <button aria-label="back to home page" onclick="window.location.href= 'index.html' " id = 'restart-button'>New Game!</button>
     </div>
-
+     <!--The two div's below are designed to be visible at the end of the game
+    only one will appear and that will depend on the outcome of the game-->
     <div class = 'sad-rabbit-container'>
       <img src = 'assets/images/you-lose-rabbit.png' id = 'you-lose' alt = 'rabbit playing the violin'>
     </div>
-
     <div class = 'happy-rabbit-container'>
         <img src = 'assets/images/you-win-rabbit.png' id = 'you-win-rabbit' alt = 'rabbit with a carrot'>
-      </div>
-
-      <div class = 'direction-btn-container'>
+    </div>
+    <!--The code below will show the directional controls when the user is playing on a tablet or 
+    mobile device-->
+    <div class = 'direction-btn-container'>
         <div><button aria-label="moves player up" id = 'up'><i class="fa-solid fa-arrow-up-long"></i></button></div> 
         <div><button  aria-label="moves player right" id = 'right'><i class="fa-solid fa-arrow-right"></i></button></div> 
         <div><button aria-label="moves player down" id = 'down'><i class="fa-solid fa-arrow-down"></i></button></div> 
         <div><button aria-label="moves player left" id = 'left'><i class="fa-solid fa-arrow-left"></i></button></div> 
     </div>
+    <!--The code below will output an image and a warning if the user turns their tablet or mobile
+    device to landscape mode-->
     <h3 id = orientation-warning> Please use device in portrait Mode!</h3>
-    <div id = 'portrait-rabbit-container'>
-     <img src = 'assets/images/rabbit-portrait-warning.png' alt = 'picture of an angry rabbit'>
+     <div id = 'portrait-rabbit-container'>
+       <img src = 'assets/images/rabbit-portrait-warning.png' alt = 'picture of an angry rabbit'>
      </div>
-
-    
-    
     <script src = 'assets/js/level3.js'></script>
-</body>
+ </body>
 </html>

@@ -7,21 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='assets/css/style.css'>
     <link rel="shortcut icon" href="#">
-
     <title>Bad Buck</title>
 </head>
 
 <body>
+    <!--This is the main image for the game -->
     <div class='main-img-container'>
         <div class='bad-bucky'>
             <img src='assets/images/badbucky.png' alt='Main Logo of a rabbit holding a baseball bat'>
         </div>
     </div>
-
-    <div class='instuctions-container'>
+    <!--The code below contains the instruction for how to play the game-->
+   <div class='instuctions-container'>
         <button id='instruction-btn'>How To Play</button>
-
-
         <p id='instructions-text'>
            The aim of the game is to catch the carrot 20 times before the timer gets to 0
            <br>
@@ -42,22 +40,15 @@
            <br>
            <br>
            if using a tablet or mobile device please play in portrait mode!!!
-
         </p>
     </div>
+    <!--Here is the code that produces the buttons that the user will interact with on the home page-->
     <div class='close-btn-container'>
         <button aria-label="game instructions" id='close-instructions'>Close</button>
     </div>
-
     <div class='start-game-btn-container'>
         <button aria-label="starts the game" onclick="window.location.href= 'level1.html' " class='start-game-btn' >Start Game!</button>
     </div>
-
-
-
-
-
-    <script src='assets/js/script.js'></script>
+   <script src='assets/js/script.js'></script>
 </body>
-
 </html>
