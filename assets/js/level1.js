@@ -1,10 +1,12 @@
+// initializing the canvas and storing both canvas and context in variables
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
-
+// difing canvas width and height
  let canvas_width = canvas.width = 1000;
   let canvas_height = canvas.height = 400;
 
-
+//getting score, time and lives so that they can be manipulated and the results are visible
+//to the user
 const score = document.getElementById('score');
 let result = 0;
 
@@ -14,6 +16,8 @@ let timeLeft = 60;
 const lives = document.getElementById('lives');
 let livesLeft = 5;
 
+//getting more elements from html document and saving them as variables
+// So that they can be manipulated
 const gameOver = document.getElementById('game-over');
 const youWin = document.getElementById('you-win');
 const newGame = document.getElementById('restart-button');
@@ -25,22 +29,42 @@ const rightArrow = document.getElementById('right');
 const downArrow = document.getElementById('down');
 const leftArrow = document.getElementById('left');
 
+// Declaring variables as false so that when a specific condition is met
+//They can be changed to true
 let mobileMoveUp = false;
 let mobileMoveRight = false;
 let mobileMoveDown = false;
 let mobileMoveLeft = false;
 
+let upPressed = false;
+let downPressed = false;
+let leftPressed = false;
+let rightPressed = false;
 
+// declaring game play variables including main dprite, enemies and boundries
+// Aswell as audio and images
 let x = 20;
 let y = 20;
 let rabbitWidth = 80;
 let rabbitHeight = 80;
+let speed = 5;
 
 let enemyX = 500 ;
 let enemyY  = 200; 
 let enemyWidth = 80;
 let enemyHeight = 80;
 
+let fox1X = 500;
+let fox1Y = 300;
+let fox1Width = 80;
+let fox1Height = 80;
+let fox1Speed = 2;
+
+const superBrocoliArray = [];
+let superBrocoliX = 400;
+let superBrocoliY = 10;
+let superBrocoliWidth = 100;
+let superBrocoliHeight = 100;
 
 let wallOneX = 400;
 let wallOneY = 0;
@@ -92,38 +116,12 @@ countDownClock.src = 'assets/images/audio/countdown clock.mp3';
 const fox1 = new Image();
 fox1.src = 'assets/images/foxenemy.png';
 
-let fox1X = 500;
-let fox1Y = 300;
-let fox1Width = 80;
-let fox1Height = 80;
-let fox1Speed = 2;
-
-
-//Input variables
-let upPressed = false;
-let downPressed = false;
-let leftPressed = false;
-let rightPressed = false;
-
-let speed = 5;
-
-
-
-const superBrocoliArray = [];
-let superBrocoliX = 400;
-let superBrocoliY = 10;
-let superBrocoliWidth = 100;
-let superBrocoliHeight = 100;
-
-
+//To ensure the main soundscape begins playing upon page load
 window.onload = function(){
   morningBirds.play();
-}
+};
 
 //Game Loop with functions
-
-
-
 function gameLoop (){
     clearScreen();
     inputs();
@@ -151,9 +149,8 @@ function gameLoop (){
     requestAnimationFrame(gameLoop);
 }
 
-
-
-
+// This function tests whether the timeLeft condition is true and if so
+// To produce a certain result
 function countDown(){
  timeLeft--;
  time.innerHTML = timeLeft;
@@ -173,9 +170,10 @@ function countDown(){
    countDownClock.src ='';
   }
 }
-
+//This defines how oftwen the countDown function is called
 let timerDown = setInterval(countDown, 1000);
-
+//This conditional statement tests if the value of result = 20 and that the timeLeft
+// Is greater than 0
 function maxPoints(){
    if(result === 20 && timeLeft > 0){
      youWin.style.display = 'block';
@@ -190,10 +188,10 @@ function maxPoints(){
      celebrate.play();
      morningBirds.src = '';
      countDownClock.src = '';
-     
-    }
+     }
 }
-
+//The TimeLow function tests if the timeLeft is less or equal to 10 and if it's true
+// changes the color of the canvas to red and begins playing the countdown timer
 function timeLow(){
   if(timeLeft <= 10){
     canvas.style.backgroundColor = 'red';
@@ -205,12 +203,10 @@ function timeLow(){
  }
 }
 
-
+//These functions draw obsticles to the canvas
 function wallOne(){
   ctx.fillRect(wallOneX, wallOneY, 20, 150);
 }
-
-
 
 function wallTwo(){
   ctx.fillRect(wallTwoX, wallTwoY, 20 ,100);
@@ -233,6 +229,9 @@ function wallSix(){
 }
  
 
+//This function tests if the main sprite X or Y position collides with the canvas boundry 
+// The function stops the main sprite exiting the canvas by declaring either the X or Y variable
+// as the edge of the boundry if the condition is true
 
 function boundryCollision(){
   if(x < 0){
@@ -250,7 +249,8 @@ function boundryCollision(){
 }
 
 
-
+// This function performs the same task as the function above but with the enemy
+// sprites
 function enemyBoundryCol (){
   if(enemyX < 0){
     enemyX = 0;
@@ -267,6 +267,9 @@ if(enemyY >= 320){
 }
 }
 
+//The wallCol function is similar to the boundryCol function 
+// It tests whether or not the X or Y coordinates are equal to the X or Y coordinates
+// of the walls that have been drawn to the canvas
 function wallCol(){
   if(x === 350  && y < 150 ){
     x = 0;
@@ -294,7 +297,8 @@ if(x === 150  && y > 50 ){
 }
 
 }
-
+//This function is similar to the function above but with the Main sprite approachig
+// from the right
 function backWallCol(){
   if(x === 380  && y < 150 ){
     x = 0;
@@ -321,7 +325,8 @@ if(x === 180  && y > 50 ){
   boingAudio.play();
 }
 }
-
+// This function allows for the enemy to detect the boundry wall and if
+// a collision happens the direction of the enemy is reversed
 function fox1WallCol(){
   if(fox1Y  === 0 || fox1Y + 80 === 400){
       fox1Speed = -fox1Speed;
@@ -329,6 +334,10 @@ function fox1WallCol(){
   
    fox1Y += fox1Speed;
   }
+
+  //This function tests if a collision between the rabbit and carrot is true
+  // If a collision happens the carrot will move to another point on the canvas
+  // if the collision happens the users score will also increase by 1
 
 function mainCollision(){
   if (x + 60 >= enemyX  &&
@@ -363,7 +372,9 @@ function mainCollision(){
             rabbitAudio.play();
     }
 }
-
+// This function tests if the main sprite and the enemy collide
+// if the condition is true the main sprite will lose a life and be played at the 
+// start of the canvas
 function fox1Collision (){
   if (x + 60 >= fox1X  &&
       y + 60 >= fox1Y &&
@@ -375,6 +386,8 @@ function fox1Collision (){
        lives.innerHTML = livesLeft;
   }
 }
+// This function is called when the timeLeft is less than 20 but greater than 10
+// if the rabbit and brocoli collide the users life count will increase by 1
 
 function drawSBrocoli(){
    if(timeLeft < 20 && timeLeft > 10){
@@ -399,9 +412,8 @@ function drawSBrocoli(){
     }
 }
 
-
-
-
+// This function tests if the users life count is equal to 0 
+// if it is the game over screen is called
 function noLifeLeft(){
   if (livesLeft === 0){
     canvas.style.backgroundColor = 'black';
@@ -419,11 +431,12 @@ function noLifeLeft(){
   }
 }
 
-
+// This function clears the screen every animation frame
 function clearScreen(){
     ctx.clearRect(0, 0, canvas_width, canvas_height);
 }
-
+// Below are all the event listeners for the directional buttons that appear on tablet and 
+//Mobile devices
 document.body.addEventListener('keydown', keyDown);
 document.body.addEventListener('keyup', keyUp);
 upArrow.addEventListener('touchstart', mobileUpMouseDown);
@@ -436,6 +449,10 @@ downArrow.addEventListener('touchend', mobileDownMouseUp);
 leftArrow.addEventListener('touchend', mobileLeftMouseUp);
 
 
+// The following functions have been used and modified for the purposes of this project
+// The resouces that have been  used are a combination of two youtube lessons
+// the first is from youtube channel Frank's Laborotory https://www.youtube.com/watch?v=EYf_JwzwTlQ
+// the second is from the youtube channel coding with adam https://www.youtube.com/watch?v=UUFPEgRKwf4
 
 function mobileUpMouseDown(e){
  if(e.type === 'touchstart'){
