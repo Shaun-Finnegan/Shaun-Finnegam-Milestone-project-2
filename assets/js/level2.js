@@ -178,8 +178,8 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.pause();
-   countDownClock.pause();
+   morningBirds.src = '';
+   countDownClock.src = '';
   }
 }
 
@@ -197,8 +197,8 @@ function maxPoints(){
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      celebrate.play();
-     morningBirds.pause();
-     countDownClock.pause();
+     morningBirds.src = '';
+     countDownClock.src = '';
     }
 }
 
@@ -208,7 +208,7 @@ function timeLow(){
     countDownClock.play();
    
     if(timeLeft === 0 || result === 20){
-      countDownClock.pause();;
+      countDownClock.src = '';
     }
  }
 }

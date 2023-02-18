@@ -168,8 +168,8 @@ function gameLoop (){
     wallFour();
     wallFive();
     wallSix();
-    maxPoints();
     noLifeLeft();
+    maxPoints();
     timeLow();
     requestAnimationFrame(gameLoop);
 }
@@ -190,8 +190,8 @@ function countDown(){
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.pause();
-   countDownClock.pause();
+   morningBirds.src = '';
+   countDownClock.src = '';
   }
 }
 
@@ -202,15 +202,15 @@ function maxPoints(){
     youWin.style.display = 'block';
     clearInterval(timerDown);
     canvas.style.display = 'none';
-    nextLevel.style.display = 'block';
     youWinRabbit.style.display = 'block';
+    newGame.style.display = 'block';
     upArrow.style.display = 'none';
     rightArrow.style.display = 'none';
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
     celebrate.play();
-    morningBirds.pause();
-    countDownClock.pause();
+    morningBirds.src = '';
+    countDownClock.src = '';
    }
 }
 
@@ -220,7 +220,7 @@ function timeLow(){
     countDownClock.play();
    
     if(timeLeft === 0 || result === 20){
-      countDownClock.pause();
+      countDownClock.src = '';
     }
  }
 }
