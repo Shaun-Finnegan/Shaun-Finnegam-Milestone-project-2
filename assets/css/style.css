@@ -1,3 +1,14 @@
+/*contents
+
+  Universal Styles -- 11
+   Home Page Styles -- 22
+   Main GamePlay Styles -- 107
+   Direction Button styles -- 192
+   Orientation Warning Styles -- 257
+   Media Queries -- 271
+*/
+
+/*Universal Styles*/
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +19,7 @@ body{
     background-color: green;
 }
 
+/*Home Page styles */
 
 .main-img-container{
    text-align: center;
@@ -88,12 +100,11 @@ body{
   background-color: #fff;
 }
 
-
-
 #container{
     position:relative
   }
-  
+ 
+  /*Main GamePlay styles*/
 
   #canvas1{
      border: 2px solid black;
@@ -149,8 +160,6 @@ body{
     display: none;
   }
 
-
-  
   #you-win{
       text-align: center;
       display: none;
@@ -179,6 +188,8 @@ body{
       text-align: center;
       margin-top: 20px;
     }
+
+    /*Direction Button Styles*/
   
     .direction-btn-container{
       display:flex;
@@ -242,10 +253,12 @@ body{
       margin-right: 0px;
     }
 
+
+    /*Orientation warning styles*/
+
     #orientation-warning{
       display: none;
     }
-
 
     #portrait-rabbit-container{
       display: none;
@@ -255,8 +268,8 @@ body{
       display: none;
     }
 
-  
-  
+  /*Media Queries*/
+
   @media screen and (max-width: 912px) {
      #canvas{
       height: 300%;
