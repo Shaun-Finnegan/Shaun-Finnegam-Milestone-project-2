@@ -449,7 +449,7 @@ downArrow.addEventListener('touchend', mobileDownMouseUp);
 leftArrow.addEventListener('touchend', mobileLeftMouseUp);
 
 
-// The following functions have been used and modified for the purposes of this project
+// The following functions down to the end of the script have been used and modified for the purposes of this project
 // The resouces that have been  used are a combination of two youtube lessons
 // the first is from youtube channel Frank's Laborotory https://www.youtube.com/watch?v=EYf_JwzwTlQ
 // the second is from the youtube channel coding with adam https://www.youtube.com/watch?v=UUFPEgRKwf4
