@@ -90,6 +90,41 @@ The site has a home page which contains two section, the first being the instruc
 Once the game is complete the user is presented with either the [you win screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-tablet.png?raw=true) or the [game over screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-mobile.png?raw=true) depending on the outcome of the game.
 If the user wins they are presented with the option to move on to the next level. However if they lose they are presented with the option to start again via the New Game button.
 
+## Features
 
+### Main Game Logo
+This logo was deaigned using a software solution called [Placeit](https://placeit.net/) and is designed to convey the origional idea for the game theme which is based on the antics of my mischevious pet rabbit.
+
+![main-image](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/main-image.png?raw=true "main logo")
+
+### How To Play Button
+This button appears on the home page and when clicked reveals the instructions for how to play the game. Then once the close button is clicked the instructions disappear.
+![how-to-play-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/instructions-button.png?raw=true "how to play button")
+
+### Start Button
+This is the button that allows the user to start the game play once they have read the instructions.
+![start-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/start-game-button.png?raw=true "start game button")
+
+### Main Game Play Area
+This was created using HTML canvas it is designed to be responsive on any device. The canvas is where all the game play happens.
+![game-play-area](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-screen.png?raw=true "game play screen")
+
+### Player Score
+The score feature keeps count of how many times the rabbit catches the carrot. If the score equals 20 before the time runs out or the user loses all their lives then they have won the game.
+
+
+![score](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/score.png?raw=true "score")
+
+### Time left/ Countdown
+The timer feature counts down in seconds from 60. If the users score is less than 20 when the timer counts down to 0 then the game is over.
+
+
+![countdown timer](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/time.png?raw=true " timer/countdown")
+
+### Lives Left
+The application also keeps count of the players lives. If the rabbit collides with one of the moving foxes then the player loses a life. If the players lives counter equals 0 before the player has achieved 20 points then the game is over.
+
+
+![lives left](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/lives.png?raw=true "lives left")
 
 
