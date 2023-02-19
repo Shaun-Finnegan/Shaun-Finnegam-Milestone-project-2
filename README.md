@@ -56,7 +56,29 @@ Welcome to Bad Buck! Bad Buck is a top down 2d game created with HTML, CSS and J
 * Wants prospective employers to be impressed with the level of interactivity that the application provides
 * Wants users to leave the site feeling that they have had a positive experience
 
+## Wireframes
 
+The wireframes below Where created at the beginnig of this project with a mobile first approach in mind. The aim was to keep the design as simple as possible so as not to take away from the experience that the game itself would provide. These wire frames where created with a software called [JustInMind](https://www.justinmind.com/)
+
+### Home Page
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/home-page-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/home-page-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/home-page-desktop.png?raw=true)
+
+### Game Screen
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-desktop.png?raw=true)
+
+### You Win Screen
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-desktop.png?raw=true)
+
+### Game Over Screen
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-desktop.png?raw=true)
 
 
 
