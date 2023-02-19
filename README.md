@@ -81,4 +81,15 @@ The wireframes below Where created at the beginnig of this project with a mobile
 * [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-desktop.png?raw=true)
 
 
+## Colour Scheme
+The colour scheme I have choosen for this website is losely based on [this](https://www.schemecolor.com/wp-content/themes/colorsite/include/cc5.php?color0=92cd28&color1=b6ee56&color2=e4ff7f&color3=ffa33f&color4=f78914&pn=Orange%20&%20Green) I wanted to keep the colour scheme simple and related to the subject of the game. As the goal of the game is for the rabbit to catch a carrott I felt it appropriate to use orange and green as the main color scheme for the website.
+
+## Structue
+The structure of the website was kept as simple as possible as the main focus of the site was the user experience during the game play.
+The site has a home page which contains two section, the first being the instructions on how to play the game and the second allowing the user to start the gamw.
+Once the game is complete the user is presented with either the [you win screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-tablet.png?raw=true) or the [game over screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-mobile.png?raw=true) depending on the outcome of the game.
+If the user wins they are presented with the option to move on to the next level. However if they lose they are presented with the option to start again via the New Game button.
+
+
+
 
