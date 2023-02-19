@@ -127,4 +127,20 @@ The application also keeps count of the players lives. If the rabbit collides wi
 
 ![lives left](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/lives.png?raw=true "lives left")
 
+### Mobile Game Controls
+One of the goals of this project was to allow users to play the game on any device. One of the ways this was achieved was to add mobile controls on devices below a certain screen size.
+
+![mobile-controls](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/mobile-game-controls.png?raw=true "mobile game controls")
+
+### Time Running Out Game Screen
+To add aditional suspence to the game once the timer gets to 10 seconds left the game screen turns red and audio of a clock counting down begins to play. This will stop if either the players score gets to 20 or the timer runs out or the player loses all of their lives.
+
+![time running out game screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/time-running-out.png?raw=true " time runnig out image")
+
+### Gain additional lives with Super Brocoli
+This feature was added towards the end of the development phase of this project. there will be a period in each level of the game where the super Brocoli appears on the game screen. If the player manages to catch the Super Brocoli before it disappears they will get an extra life.
+
+![Super Brocoli](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/super-brocoli.png?raw=true "Super Brocoli")
+
+
 
