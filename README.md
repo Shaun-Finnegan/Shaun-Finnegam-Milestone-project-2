@@ -7,6 +7,22 @@ Welcome to Bad Buck! Bad Buck is a top down 2d game created with HTML, CSS and J
 
 ## Table of Contents
 
+* [Project Goals](#project-goals)
+* [User Experience](#user-experience)
+* [User Stories](#user-stories)
+* [Wireframes](#wireframes)
+* [Colour Scheme](#colour-scheme)
+* [Structure](#structue)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Test Driven Development (TDD)](#test-driven-development)
+* [Behaviour Driven Development (BDD)](#behaviour-driven-development)
+* [Bugs](#bugs)
+* [Wish List](#wish-list)
+* [Deployment](#deployment)
+* [Credits](#credits)
+
 ## Project Goals
 ### User Goals
 * To Have a fun and enjoyable experience whilst using the application
