@@ -166,6 +166,23 @@ So when the user tries to play the game in landscape mode on any mobile device t
 
 ![play in portrait mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/use-in-portrait.png?raw=true "prompt the user to turn the device to portrait")
 
+### Multiple Level;s of game play
+The application has 3 levels of game play each level increasing in difficulty due to the increase in enemies on each level please see images below.
+
+#### Level 1
+
+![Level 1 game play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-screen.png?raw=true "Level 1 game play")
+
+
+#### Level 2
+
+![Level 2 Game Play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-level-2.png?raw=true " Level 2 Game Play")
+
+
+#### Level 3
+
+![Level 3 Game Play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-level-3.png?raw=true " Level 3 Game Play")
+
 
 ## Technologies Used
 ### Languages

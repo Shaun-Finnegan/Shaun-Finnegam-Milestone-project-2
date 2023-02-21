@@ -106,29 +106,28 @@ carrot.src = 'assets/images/carrots.png';
 
 let superBrocoli = new Image();
 superBrocoli.src = 'assets/images/super-brocoli.png';
-
+//Audio source taken from PixaBay https://pixabay.com/
 let rabbitAudio = new Audio();
 rabbitAudio.src = 'assets/images/audio/rabbitEating.mp3';
-
+//Audio source taken from PixaBay https://pixabay.com/
 let bunnyGrunt = new Audio ();
 bunnyGrunt.src = 'assets/images/audio/bunny-grunt.mp3';
-
+//Audio source taken from PixaBay https://pixabay.com/
 let boingAudio = new Audio ();
 boingAudio.src= 'assets/images/audio/boing-6222.mp3';
-
+//Audio source taken from PixaBay https://pixabay.com/
 let celebrate = new Audio ();
 celebrate.src ='assets/images/audio/crowd-cheer-ii-6263.mp3';
-
+//Audio source taken from PixaBay https://pixabay.com/
 let gameOverAudio = new Audio();
 gameOverAudio.src = 'assets/images/audio/game-over-arcade-6435.mp3';
-
+//Audio source taken from PixaBay https://pixabay.com/
 let morningBirds = new Audio();
 morningBirds.src = 'assets/images/audio/morning-birds.mp3';
-
-
+//Audio source taken from PixaBay https://pixabay.com/
 let eatBrocoli = new Audio();
 eatBrocoli.src = 'assets/images/audio/notification-for-game-scenes-132473.mp3';
-
+//Audio source taken from PixaBay https://pixabay.com/
 let countDownClock = new Audio();
 countDownClock.src = 'assets/images/audio/countdown clock.mp3';
 
