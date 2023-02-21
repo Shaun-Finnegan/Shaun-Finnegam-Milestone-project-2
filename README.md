@@ -167,4 +167,28 @@ So when the user tries to play the game in landscape mode on any mobile device t
 ![play in portrait mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/use-in-portrait.png?raw=true "prompt the user to turn the device to portrait")
 
 
+## Technologies Used
+### Languages
+* HTML 
+* CSS
+* JavaScript
 
+### Additional tools used within the project
+* FontAwesome
+* Placeit
+* GitHub
+* GitPod
+* Chrome Dev Tools
+* JustinMind free prototyping tool
+
+
+## Testing
+### Cross Platform Testing
+Once the site was completed and deployed it was tested on four web browsers to check that the application behaved and performed the same way on each one.
+The browsers used where:
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+* Safari
+
+Overall I was pleased to see that the sites performancer and behaviour was consistent througfhout all four browsers.
