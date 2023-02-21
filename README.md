@@ -194,7 +194,7 @@ The browsers used where:
 Overall I was pleased to see that the sites performancer and behaviour was consistent througfhout all four browsers.
 
 
-## Compatability Testing
+### Compatability Testing
 Once deployed the site was tested on numerous devices to ensure that performance and behaviour were consistent. The devices used are as follows:
 * Asus VivoBook Laptop
 * IPad Air 3
@@ -205,7 +205,31 @@ Once deployed the site was tested on numerous devices to ensure that performance
 Performance and behaviour of the application whilst being tested on these devices was consistent and the application behaved as intended on each device.
 
 
-## Responsive Testing
+### Responsive Testing
 As well as the application been tested on all the devices mentioned above, the application was also tested using the responsive screen view in chrome dev tools. This additional testing really helped to pick out any responsiveness issues that had previously been overlooked.
 However the application was very responsive and behaved the way the dveloper intended on all screen sizes.
 
+
+## Validator Testing
+### HTML 
+The tool I chose to use to validate my HTML was [W3C Markup Validator](https://validator.w3.org/)
+and I am delighted to say that there were no major  errors or issues with my Markup. As you can see from below.
+
+#### Home Page
+
+![Home Page HTML Validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/index-html-validator.png?raw=true)
+
+
+#### Level 1
+
+![Level 1 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level1-html-validator.png?raw=true "Level 1 HTML Validator")
+
+
+#### Level 2
+
+![Level 2 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level2-html-validator.png?raw=true "Level 2 HTML Validator")
+
+
+#### Level 3
+
+![Level 3 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level3-html-validator.png?raw=true " Level 3 HTML Validator")
