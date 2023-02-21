@@ -99,14 +99,19 @@ This logo was deaigned using a software solution called [Placeit](https://placei
 
 ### How To Play Button
 This button appears on the home page and when clicked reveals the instructions for how to play the game. Then once the close button is clicked the instructions disappear.
+
+
 ![how-to-play-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/instructions-button.png?raw=true "how to play button")
 
 ### Start Button
 This is the button that allows the user to start the game play once they have read the instructions.
+
 ![start-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/start-game-button.png?raw=true "start game button")
 
 ### Main Game Play Area
 This was created using HTML canvas it is designed to be responsive on any device. The canvas is where all the game play happens.
+
+
 ![game-play-area](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-screen.png?raw=true "game play screen")
 
 ### Player Score
@@ -128,7 +133,7 @@ The application also keeps count of the players lives. If the rabbit collides wi
 ![lives left](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/lives.png?raw=true "lives left")
 
 ### Mobile Game Controls
-One of the goals of this project was to allow users to play the game on any device. One of the ways this was achieved was to add mobile controls on devices below a certain screen size.
+One of the goals of this project was to allow users to play the game on any device. One of the ways this was achieved was to add mobile controls on devices below a certain screen size. The buttons allow the user to control the main sprite just as they woul using the arrow keys on a keyboard. Once the button is pressed down the color of the button turns orange to show the user the button is responding to their interaction.
 
 ![mobile-controls](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/mobile-game-controls.png?raw=true "mobile game controls")
 
@@ -141,6 +146,25 @@ To add aditional suspence to the game once the timer gets to 10 seconds left the
 This feature was added towards the end of the development phase of this project. there will be a period in each level of the game where the super Brocoli appears on the game screen. If the player manages to catch the Super Brocoli before it disappears they will get an extra life.
 
 ![Super Brocoli](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/super-brocoli.png?raw=true "Super Brocoli")
+
+
+### You Win Screen
+Depending upon the outcome of the game the user will be presented with one of two screen with some options.
+If the user has managed to score 20 points before the time runs down to 0 or before they have lost all of there lives they will be presented with the following screen.
+Which not only tells the user they have completed the level it also gives them the option to continue to the next level.
+![you win screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-screen.png?raw=true "you win screen")
+
+### Game Over Screen
+Alternatively if the user has failed to score 20 points before the timer runs down to 0 or they have lost all of their lives they will be presented with the game over screen that gives the user the option to begin a new game.
+
+![game over screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-screen.png?raw=true " game over screen" )
+
+### Play in Portrait Mode
+Throughout the development of the project it was becomming clear that the game play screen would have to be scaled down a lot to accomodate game play in landscape mode. But I felt that this would severly effect the users experience whilst playing the game as the screen and controls would be so small that the game would become very difficult to play.
+So I decided to only allow game play on mobile devices in portrait mode to ensure the user had a good experience whilst on the site and had a positive remotional response to the game during and after the visit.
+So when the user tries to play the game in landscape mode on any mobile device the game play screen disappears and the user is greated with a warning to turn the device to portrait to comtinue playing the game.
+
+![play in portrait mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/use-in-portrait.png?raw=true "prompt the user to turn the device to portrait")
 
 
 
