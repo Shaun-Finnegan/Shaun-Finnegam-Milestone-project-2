@@ -324,6 +324,16 @@ See Below:
 
 ![Audio undefined to remove glitches](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/undefined-countdown.png?raw=true " Undefined countdown variable")
 
+### Bug 3 - Enemy Sprite Random movements interfering with other Game Play
+One of the biggest issues I had during this project was the results of the collision between the main sprite (The rabbit) and the enemy sprite ( The Carrot) the initial idea was that when a collision was detected between the rabbit and the carrot the carrot would move to a random position on the canvas.
+However some of the random positions interfered with the walls that had been put in the game as the carrot would sit on top of them or go outside the boundry of the canvas itself.
+The solution for this was to generate an empty array.
+So firstly I used a for loop to push 1000 values (this was done as the canvas in which the game is played is 1000 pixels wide) to the empty array called XcoOrd. Then creating another array called deleteNums which mapped out all of the x coordinates that I wanted the carrot to avoid so it wouldn't collide with any other elements of the game.
+Finally I used the .filter() method to create a new array called enemyXValue that would take the 1000 values of the XCoOrd array filter out the values specified in the deleteNums array which would leave the enemyXValue array with the desired x positions (horizontal positions) to which the carrot would appear randomly on the canvas.
+Here is the function I used to achieve this.
+
+![Main Collision Function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/main-collision.png?raw=true " Main Collision Function")
+
 
 
 
