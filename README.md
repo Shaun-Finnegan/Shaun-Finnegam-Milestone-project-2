@@ -345,6 +345,31 @@ Upon the completion of this project and reflecting on how I feel the project wen
 * Add a charecter screen to allow the user to choose which sprite they would like to play the game with
 
 
+## Deployment
+Here is a step by step guide of a how the application was deployed to GitHub Pages.
+
+* The Code Institute provided [this template](https://github.com/Code-Institute-Org/gitpod-full-template) Which was used for the project.
+
+* Then a new repository was created using the CI Template and named accordingly.
+
+* Using the git pod extension (green GitPod button at the top right of the repository) the project was created within GitPod.
+
+* During the build process the code was regularly saved, commited and then pushed to GitHub.
+
+* To deploy the site on GitHub pages I navigated to the repo settings tab, choose the main branch and pressed save. This provided the following url https://shaun-finnegan.github.io/Shaun-Finnegam-Milestone-project-2/ which is the link to the live site.
+
+To run this project on your machine you should:
+
+* Go to the GitHub Repository https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2
+
+* Click on the code button and download the .zip file
+
+* Then extract the .zip file so that the files are now on your machine.
+
+* Run the index.html file on your choosen browser.
+
+
+
 
 
 
