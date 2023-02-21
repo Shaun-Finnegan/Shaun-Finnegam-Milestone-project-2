@@ -419,7 +419,7 @@ A Massive thank you to Frank who's tutorials have allowed me to understand the p
 Another massive thank you to PixaBay for providing such high quality audio resources. The use of which has greatly improved the user experience within my application.
 
 
-### vexels clipart library & Free Icons
+### vexels, clipart library & Free Icons
 A Massive thank you for providing the images that made this web application possible.
 
 
