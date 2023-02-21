@@ -235,7 +235,32 @@ and I am delighted to say that there were no major  errors or issues with my Mar
 ![Level 3 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level3-html-validator.png?raw=true " Level 3 HTML Validator")
 
 
-## CSS
+### CSS
 The CSS file was reasonably small for this project ( around 300 lines) as a lot of the styling was done using JavaScript. The validator service used for testing the CSS was [W3C CSS Validator Service](https://jigsaw.w3.org/css-validator/) and I was delighted to see that there were no major issues or errors within the code.
 
 ![CSS Validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/css-validator.png?raw=true "CSS Validator results")
+
+
+### Javascript
+The service that Iused to test and validate my Javascript was [JS Hint](https://jshint.com/) I tested each of the 4 JS files in my project seperatley and was pleased to find that the only issues that occured where a few unnecessary semi colons and one unused variable. All of these issues have now been corrected and the final results before submission can be seen below.
+
+#### script.js
+
+![script.js file validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/script-js-hint.png?raw=true "script.js file validator")
+
+
+#### level1.js
+
+![level1.js validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level1-js-hint.png?raw=true " lelvel1.js validator results")
+
+
+#### level2.js
+
+![level2.js Validator Results](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level2-js-hint.png?raw=true "level 2.js Validator results")
+
+
+#### level3.js
+
+![Level3.js Validator Results](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level3-js-hint.png?raw=true "Level3.js validator results")
+
+
