@@ -264,3 +264,17 @@ The service that Iused to test and validate my Javascript was [JS Hint](https://
 ![Level3.js Validator Results](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level3-js-hint.png?raw=true "Level3.js validator results")
 
 
+## Performance and accessibility Testing
+To test thwe overall performance and accessibility of the application U used [The Google Chrome Lighthouse Extension](https://developer.chrome.com/docs/lighthouse/) I tested both performance and accesibility on desktop and mobile devices and I was very pleased with the results.
+
+### Desktop
+
+![Lighthouse results for Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/lighthouse-desktop.png?raw=true " Lighthouse results for desktop")
+
+For mobile the results wearn't quite as impressive but overall I am still very pleased with the results.
+
+### Mobile
+
+![Lighthouse results for mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/lighthouse-mobile.png?raw=true "Lighthouse results for mobile")
+
+
