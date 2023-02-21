@@ -317,6 +317,13 @@ See code below.
 
 ![Window Onload function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/images/window-onload.png?raw=true "window onload function")
 
+However some of the conditional statements used within the project determined what sounds would play and when. So initially I Used the .pause() function to stop the audio from playing depending on what conditions where either true or false.
+This seemed to have a negative effect on the project and would cause audio to glitch especially the countdown timer audio whenever a you win or game over screen was called.
+So to resolve this if a condition was met that dictated a specific sound had to be stopped rather than using the .pause method I simply redefined the variable as undefined.
+See Below:
+
+![Audio undefined to remove glitches](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/undefined-countdown.png?raw=true " Undefined countdown variable")
+
 
 
 
