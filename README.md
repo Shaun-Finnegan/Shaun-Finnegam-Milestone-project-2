@@ -233,3 +233,9 @@ and I am delighted to say that there were no major  errors or issues with my Mar
 #### Level 3
 
 ![Level 3 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level3-html-validator.png?raw=true " Level 3 HTML Validator")
+
+
+## CSS
+The CSS file was reasonably small for this project ( around 300 lines) as a lot of the styling was done using JavaScript. The validator service used for testing the CSS was [W3C CSS Validator Service](https://jigsaw.w3.org/css-validator/) and I was delighted to see that there were no major issues or errors within the code.
+
+![CSS Validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/css-validator.png?raw=true "CSS Validator results")
