@@ -311,6 +311,13 @@ see code and warning screen below.
 ![Return to Portait Mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/use-in-portrait.png?raw=true "Use in portrait mode warning")
 
 
+### Bug 2 - Glitches With Audio
+Another issue arrose within the development of this project and that was the game audio. The main audio was fine as I ensured it would begin playing as soon as the game screen had loaded.
+See code below.
+
+![Window Onload function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/images/window-onload.png?raw=true "window onload function")
+
+
 
 
 
