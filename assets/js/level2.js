@@ -87,13 +87,13 @@ let speed = 5;
 let fox1Speed = 2;
 let fox2Speed = 2;
 
-
+// Image source taken from vexels https://www.vexels.com/png-svg/preview/159517/rabbit-muzzle-ear-illustration
 const mainSprite = new Image();
 mainSprite.src = 'assets/images/main-rabbit.png';
-
+// Image source taken from clipartlibrary.com
 let carrot = new Image();
 carrot.src = 'assets/images/carrots.png';
-
+//Image source taken from vexels https://www.vexels.com/png-svg/preview/143075/broccoli-color-icon
 let superBrocoli = new Image();
 superBrocoli.src = 'assets/images/super-brocoli.png';
 //Audio source taken from PixaBay https://pixabay.com/
@@ -120,10 +120,9 @@ eatBrocoli.src = 'assets/images/audio/notification-for-game-scenes-132473.mp3';
 //Audio source taken from PixaBay https://pixabay.com/
 let countDownClock = new Audio();
 countDownClock.src = 'assets/images/audio/countdown clock.mp3';
-//Audio source taken from PixaBay https://pixabay.com/
+//Image source taken from https://www.freeiconspng.com/img/35687
 const fox1 = new Image();
 fox1.src = 'assets/images/foxenemy.png';
-
 
 const fox2 = new Image();
 fox2.src = 'assets/images/foxenemy.png';
