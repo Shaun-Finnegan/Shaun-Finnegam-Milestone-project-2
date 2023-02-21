@@ -192,3 +192,20 @@ The browsers used where:
 * Safari
 
 Overall I was pleased to see that the sites performancer and behaviour was consistent througfhout all four browsers.
+
+
+## Compatability Testing
+Once deployed the site was tested on numerous devices to ensure that performance and behaviour were consistent. The devices used are as follows:
+* Asus VivoBook Laptop
+* IPad Air 3
+* Samsung Galaxy s8
+* Oppo a72
+* various templates within Chrome Dev Tools
+
+Performance and behaviour of the application whilst being tested on these devices was consistent and the application behaved as intended on each device.
+
+
+## Responsive Testing
+As well as the application been tested on all the devices mentioned above, the application was also tested using the responsive screen view in chrome dev tools. This additional testing really helped to pick out any responsiveness issues that had previously been overlooked.
+However the application was very responsive and behaved the way the dveloper intended on all screen sizes.
+
