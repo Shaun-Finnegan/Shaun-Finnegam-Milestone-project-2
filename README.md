@@ -335,6 +335,18 @@ Here is the function I used to achieve this.
 ![Main Collision Function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/main-collision.png?raw=true " Main Collision Function")
 
 
+## Wish List
+
+Upon the completion of this project and reflecting on how I feel the project went overall I feel that there are some additional feature that I could add to further the user experience.
+
+* Add a login screen and a leader board
+* Add aditional enimies or imcreased difficulty to the game
+* Add additional Levels to the 3 that already exist
+* Add a charecter screen to allow the user to choose which sprite they would like to play the game with
+
+
+
+
 
 
 
