@@ -278,3 +278,11 @@ For mobile the results wearn't quite as impressive but overall I am still very p
 ![Lighthouse results for mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/lighthouse-mobile.png?raw=true "Lighthouse results for mobile")
 
 
+## Test Driven Development (TDD) VS Behaviour Driven Development (BDD)
+### Test Driven Development
+Test driven development is a form of development that requires a software testing tool such as Jest. It allows the developer to build code incrementally and test the code line by line in an automated way and the tests are usually written before the actual code itself. This form of development is extremely advantageous especially if working in larger teams. It makes each of code far more robust and can reduce the amount of errors made when compared to Behaviour Driven Development it is also less resource hungry and allows developers to test for "edge cases" that may be more difficult to test otherwise. However this type of development can have it's draw backs as the quality of the tests we produce will depend on the questions we are asking of our testing software.
+As pointed out this type of development is highly advantages when working inlarge teams but within the scope of this project there is only one developer and as the application is based on game play and the user interacting with the game I felt that the Behaviour Driven Development approach was more appropriate.
+
+
+
+
