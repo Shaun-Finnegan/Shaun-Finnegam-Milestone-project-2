@@ -283,6 +283,11 @@ For mobile the results wearn't quite as impressive but overall I am still very p
 Test driven development is a form of development that requires a software testing tool such as Jest. It allows the developer to build code incrementally and test the code line by line in an automated way and the tests are usually written before the actual code itself. This form of development is extremely advantageous especially if working in larger teams. It makes each of code far more robust and can reduce the amount of errors made when compared to Behaviour Driven Development it is also less resource hungry and allows developers to test for "edge cases" that may be more difficult to test otherwise. However this type of development can have it's draw backs as the quality of the tests we produce will depend on the questions we are asking of our testing software.
 As pointed out this type of development is highly advantages when working inlarge teams but within the scope of this project there is only one developer and as the application is based on game play and the user interacting with the game I felt that the Behaviour Driven Development approach was more appropriate.
 
+### Behaviour Driven Development
+So as mentioned previously I felt that using a BDD approach was more approapriate for this project. It allowed me to test each peice of code manually and incrementally before moving on to the next feature of the game.
+An example of this would be getting the main sprite (The Rabbit) to move in all directions, this of course could have been done in a TDD approach however by using a BDD approach it allowed me to interact with the sprite and incrementally add to the code.
+Firstly I wrote the code that  would move the main sprite in an upwards trajectory. (By decrementing the Y position of the rabbit) and once this peice of code produced the desired behaviour I then moved on to writting the code that would move the main sprite in a downward trajectory (incrementing the Y position) and so on and so forth.
+By adopting the BDD approach it allowed me to put myself in the users shoes and to see how all of the game play responded to the users input.
 
 
 
