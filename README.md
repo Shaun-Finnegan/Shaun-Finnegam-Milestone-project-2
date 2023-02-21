@@ -290,4 +290,28 @@ Firstly I wrote the code that  would move the main sprite in an upwards trajecto
 By adopting the BDD approach it allowed me to put myself in the users shoes and to see how all of the game play responded to the users input.
 
 
+## Bugs
+The bugs that where encountered during this project where addressed on encountering them.
+The nsolutions to the issues that come up during the development of this project where found through reasearch by using Google and Youtube as well as stack overflow and slack to ask advice from other students who encountered similar issues.
+
+
+### Bug 1 - Game play in Landscape mode
+The biggest issue I had within the development of this project was enabling the game screen and user control to fit onto some mobile devices in landscape mode.
+
+Many things where tried to overcome this such as reducing the size of the game screen and size of the user controls to physically moving the user controls to the very bottom of the window object. However after trying  to make the game screen, user controls, score count, timer and life count fit onto a mobile device in landscape it was decided it would have a negative effect on the user experience.
+So therefore using the orientatio media feature in CSS a feature was added that would promt the user to return the device to portrait if they tried to play the game in landscape move.
+see code and warning screen below.
+
+#### CSS Orientation Media Feature
+
+![CSS orientation media query](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/css%20orientation.png?raw=true "Css Media Query Orientation")
+
+#### Return to portrait mode warning
+
+![Return to Portait Mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/use-in-portrait.png?raw=true "Use in portrait mode warning")
+
+
+
+
+
 
