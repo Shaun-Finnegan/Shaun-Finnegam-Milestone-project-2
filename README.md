@@ -369,6 +369,39 @@ To run this project on your machine you should:
 * Run the index.html file on your choosen browser.
 
 
+## Credits
+
+### Code Institute
+
+A Massive thank you to the team at Code Institute who have provided me with the opportunity to be able to study and learn the basics of HTML, CSS and JavaScript
+
+### Shipley College
+
+Google fonts was used to provide the main font families that where used throughout this project.
+
+### Am I Responsive
+
+Am I Responsive was used to create the Images at the top of this README.md file to showcase the responsiveness of thwe website.
+
+### W3C 
+
+A Massive THank you to W3C Schools for providing bothe the HTML and CSS validators to allow me to test my code.
+
+### JS Hint
+
+A massive thank you to JS Hint for providing the JavaScript validation tool.
+
+
+### Franks Laboratory
+
+A Massive thank you to Frank who's tutorials have allowed me to understand the priciple fundamental in game development.
+
+
+### Pixabay
+
+Another massive thank you to PixaBay for providing such high quality audio resources. The use of which has greatly improved the user experience within my application.
+
+
 
 
 
