@@ -28,6 +28,8 @@ const  upArrow = document.getElementById('up');
 const rightArrow = document.getElementById('right');
 const downArrow = document.getElementById('down');
 const leftArrow = document.getElementById('left');
+const noPortrait = document.getElementById("portrait-warning");
+const noPortraitText = document.getElementById('orientation-warning');
 
 // Declaring variables as false so that when a specific condition is met
 //They can be changed to true
@@ -128,8 +130,6 @@ const fox2 = new Image();
 fox2.src = 'assets/images/foxenemy.png';
 
 
-
-
 //To ensure the main soundscape begins playing upon page load
 window.onload = function(){
   morningBirds.play();
@@ -183,6 +183,8 @@ function countDown(){
     rightArrow.style.display = 'none';
     downArrow.style.display = 'none';
     leftArrow.style.display = 'none';
+    noPortrait.style.display = 'none';
+    noPortraitText.style.display = 'none';
    gameOverAudio.play();
    morningBirds.src = '';
    countDownClock.src = '';
@@ -204,6 +206,8 @@ function maxPoints(){
      rightArrow.style.display = 'none';
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
+     noPortrait.style.display = 'none';
+     noPortraitText.style.display = 'none';
      celebrate.play();
      morningBirds.src = '';
      countDownClock.src = '';
