@@ -271,7 +271,7 @@ and I am delighted to say that there were no major  errors or issues with my Mar
 
 ## A Note about semantic HTML
  Within the project semantic HTML was origionally used. However upon testing the markup with the [W3C Markup Validator](https://validator.w3.org/) I was presented with the following warnings.
- ![semantic html warnings](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/semantic%20HTML%20warnings.png?raw=true "semantic html warnings")
+ ![semantic html warnings](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/semantic-HTML-warnings.png?raw=true "semantic html warnings")
 
  So based on these results it was decided between myself and my mentor to follow the advice of the warnings shown above and replace the semantic html tags with div tags instead.
  The markup was then tested again and it produced no warnings or errors.
