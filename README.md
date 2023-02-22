@@ -16,6 +16,7 @@ Welcome to Bad Buck! Bad Buck is a top down 2d game created with HTML, CSS and J
 * [Features](#features)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
+* [A note about semantic HTML](#a-note-about-semantic-html)
 * [Test Driven Development (TDD)](#test-driven-development)
 * [Behaviour Driven Development (BDD)](#behaviour-driven-development)
 * [Bugs](#bugs)
@@ -103,7 +104,7 @@ The colour scheme I have choosen for this website is losely based on [this](http
 ## Structue
 The structure of the website was kept as simple as possible as the main focus of the site was the user experience during the game play.
 The site has a home page which contains two section, the first being the instructions on how to play the game and the second allowing the user to start the gamw.
-Once the game is complete the user is presented with either the [you win screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-tablet.png?raw=true) or the [game over screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-mobile.png?raw=true) depending on the outcome of the game.
+Once the game is complete the user is presented with either the [you win screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/you-win-screen.png?raw=true " you win screen") or the [game over screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-over-screen.png?raw=true "game over screen") depending on the outcome of the game.
 If the user wins they are presented with the option to move on to the next level. However if they lose they are presented with the option to start again via the New Game button.
 
 ## Features
@@ -149,7 +150,7 @@ The application also keeps count of the players lives. If the rabbit collides wi
 ![lives left](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/lives.png?raw=true "lives left")
 
 ### Mobile Game Controls
-One of the goals of this project was to allow users to play the game on any device. One of the ways this was achieved was to add mobile controls on devices below a certain screen size. The buttons allow the user to control the main sprite just as they woul using the arrow keys on a keyboard. Once the button is pressed down the color of the button turns orange to show the user the button is responding to their interaction.
+One of the goals of this project was to allow users to play the game on any device. One of the ways this was achieved was to add mobile controls on devices below a certain screen size. The buttons allow the user to control the main sprite just as they would using the arrow keys on a keyboard. Once the button is pressed down the color of the button turns orange to show the user the button is responding to their interaction.
 
 ![mobile-controls](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/mobile-game-controls.png?raw=true "mobile game controls")
 
@@ -182,7 +183,7 @@ So when the user tries to play the game in landscape mode on any mobile device t
 
 ![play in portrait mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/use-in-portrait.png?raw=true "prompt the user to turn the device to portrait")
 
-### Multiple Level;s of game play
+### Multiple Levels of game play
 The application has 3 levels of game play each level increasing in difficulty due to the increase in enemies on each level please see images below.
 
 #### Level 1
@@ -240,7 +241,7 @@ Performance and behaviour of the application whilst being tested on these device
 
 ### Responsive Testing
 As well as the application been tested on all the devices mentioned above, the application was also tested using the responsive screen view in chrome dev tools. This additional testing really helped to pick out any responsiveness issues that had previously been overlooked.
-However the application was very responsive and behaved the way the dveloper intended on all screen sizes.
+However the application was very responsive and behaved the way the developer intended on all screen sizes.
 
 
 ## Validator Testing
@@ -268,6 +269,14 @@ and I am delighted to say that there were no major  errors or issues with my Mar
 ![Level 3 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/level3-html-validator.png?raw=true " Level 3 HTML Validator")
 
 
+## A Note about semantic HTML
+ Within the project semantic HTML was origionally used. However upon testing the markup with the [W3C Markup Validator](https://validator.w3.org/) I was presented with the following warnings.
+ ![semantic html warnings](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/semantic%20HTML%20warnings.png?raw=true "semantic html warnings")
+
+ So based on these results it was decided between myself and my mentor to follow the advice of the warnings shown above and replace the semantic html tags with div tags instead.
+ The markup was then tested again and it produced no warnings or errors.
+
+
 ### CSS
 The CSS file was reasonably small for this project ( around 300 lines) as a lot of the styling was done using JavaScript. The validator service used for testing the CSS was [W3C CSS Validator Service](https://jigsaw.w3.org/css-validator/) and I was delighted to see that there were no major issues or errors within the code.
 
@@ -275,7 +284,7 @@ The CSS file was reasonably small for this project ( around 300 lines) as a lot 
 
 
 ### Javascript
-The service that Iused to test and validate my Javascript was [JS Hint](https://jshint.com/) I tested each of the 4 JS files in my project seperatley and was pleased to find that the only issues that occured where a few unnecessary semi colons and one unused variable. All of these issues have now been corrected and the final results before submission can be seen below.
+The service that Iused to test and validate my Javascript was [JS Hint](https://jshint.com/) I tested each of the 4 JS files in my project seperatly and was pleased to find that the only issues that occured where a few unnecessary semi colons and one unused variable. All of these issues have now been corrected and the final results before submission can be seen below.
 
 #### script.js
 
@@ -298,7 +307,7 @@ The service that Iused to test and validate my Javascript was [JS Hint](https://
 
 
 ## Performance and accessibility Testing
-To test thwe overall performance and accessibility of the application U used [The Google Chrome Lighthouse Extension](https://developer.chrome.com/docs/lighthouse/) I tested both performance and accesibility on desktop and mobile devices and I was very pleased with the results.
+To test the overall performance and accessibility of the application U used [The Google Chrome Lighthouse Extension](https://developer.chrome.com/docs/lighthouse/) I tested both performance and accesibility on desktop and mobile devices and I was very pleased with the results.
 
 ### Desktop
 
@@ -313,8 +322,8 @@ For mobile the results wearn't quite as impressive but overall I am still very p
 
 ## Test Driven Development (TDD) VS Behaviour Driven Development (BDD)
 ### Test Driven Development
-Test driven development is a form of development that requires a software testing tool such as Jest. It allows the developer to build code incrementally and test the code line by line in an automated way and the tests are usually written before the actual code itself. This form of development is extremely advantageous especially if working in larger teams. It makes each of code far more robust and can reduce the amount of errors made when compared to Behaviour Driven Development it is also less resource hungry and allows developers to test for "edge cases" that may be more difficult to test otherwise. However this type of development can have it's draw backs as the quality of the tests we produce will depend on the questions we are asking of our testing software.
-As pointed out this type of development is highly advantages when working inlarge teams but within the scope of this project there is only one developer and as the application is based on game play and the user interacting with the game I felt that the Behaviour Driven Development approach was more appropriate.
+Test driven development is a form of development that requires a software testing tool such as Jest. It allows the developer to build code incrementally and test the code line by line in an automated way and the tests are usually written before the actual code itself. This form of development is extremely advantageous especially if working in larger teams. It makes each line of code far more robust and can reduce the amount of errors made when compared to Behaviour Driven Development it is also less resource hungry and allows developers to test for "edge cases" that may be more difficult to test otherwise. However this type of development can have it's draw backs as the quality of the tests we produce will depend on the questions we are asking of our testing software.
+As pointed out this type of development is highly advantages when working in large teams but within the scope of this project there is only one developer and as the application is based on game play and the user interacting with the game I felt that the Behaviour Driven Development approach was more appropriate.
 
 ### Behaviour Driven Development
 So as mentioned previously I felt that using a BDD approach was more approapriate for this project. It allowed me to test each peice of code manually and incrementally before moving on to the next feature of the game.
