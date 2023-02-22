@@ -129,7 +129,7 @@ let eatBrocoli = new Audio();
 eatBrocoli.src = 'assets/images/audio/notification-for-game-scenes-132473.mp3';
 //Audio source taken from PixaBay https://pixabay.com/
 let countDownClock = new Audio();
-countDownClock.src = 'assets/images/audio/countdown clock.mp3';
+countDownClock.src = 'assets/images/audio/countdown-clock.mp3';
 //Image source taken from https://www.freeiconspng.com/img/35687
 const fox1 = new Image();
 fox1.src = 'assets/images/foxenemy.png';
