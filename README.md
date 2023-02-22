@@ -1,5 +1,5 @@
 # Bad Buck
-![alt text](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/responsive-dev-for-readme.png?raw=true "Responsive Image of application")
+![responsive Project](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/responsive-dev-for-readme.png?raw=true "Responsive Image of application")
 
 [Live Site](https://shaun-finnegan.github.io/Shaun-Finnegam-Milestone-project-2/)
 
@@ -77,24 +77,24 @@ Welcome to Bad Buck! Bad Buck is a top down 2d game created with HTML, CSS and J
 The wireframes below Where created at the beginnig of this project with a mobile first approach in mind. The aim was to keep the design as simple as possible so as not to take away from the experience that the game itself would provide. These wire frames where created with a software called [JustInMind](https://www.justinmind.com/)
 
 ### Home Page
-* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/home-page-mobile.png?raw=true)
-* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/home-page-tablet.png?raw=true)
-* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/home-page-desktop.png?raw=true)
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/home-page-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/home-page-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/home-page-desktop.png?raw=true)
 
 ### Game Screen
-* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-mobile.png?raw=true)
-* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-tablet.png?raw=true)
-* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-desktop.png?raw=true)
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/home-page-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-play-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-play-desktop.png?raw=true)
 
 ### You Win Screen
-* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-mobile.png?raw=true)
-* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-tablet.png?raw=true)
-* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-desktop.png?raw=true)
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/you-win-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/you-win-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/you-win-desktop.png?raw=true)
 
 ### Game Over Screen
-* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-mobile.png?raw=true)
-* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-tablet.png?raw=true)
-* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-desktop.png?raw=true)
+* [Mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-over-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-over-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-over-desktop.png?raw=true)
 
 
 ## Colour Scheme
@@ -111,93 +111,93 @@ If the user wins they are presented with the option to move on to the next level
 ### Main Game Logo
 This logo was deaigned using a software solution called [Placeit](https://placeit.net/) and is designed to convey the origional idea for the game theme which is based on the antics of my mischevious pet rabbit.
 
-![main-image](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/main-image.png?raw=true "main logo")
+![main-image](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/main-image.png?raw=true "main logo")
 
 ### How To Play Button
 This button appears on the home page and when clicked reveals the instructions for how to play the game. Then once the close button is clicked the instructions disappear.
 
 
-![how-to-play-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/instructions-button.png?raw=true "how to play button")
+![how-to-play-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/instructions-button.png?raw=true "how to play button")
 
 ### Start Button
 This is the button that allows the user to start the game play once they have read the instructions.
 
-![start-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/start-game-button.png?raw=true "start game button")
+![start-button](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/start-game-button.png?raw=true "start game button")
 
 ### Main Game Play Area
 This was created using HTML canvas it is designed to be responsive on any device. The canvas is where all the game play happens.
 
 
-![game-play-area](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-screen.png?raw=true "game play screen")
+![game-play-area](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-play-screen.png?raw=true "game play screen")
 
 ### Player Score
 The score feature keeps count of how many times the rabbit catches the carrot. If the score equals 20 before the time runs out or the user loses all their lives then they have won the game.
 
 
-![score](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/score.png?raw=true "score")
+![score](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/score.png?raw=true "score")
 
 ### Time left/ Countdown
 The timer feature counts down in seconds from 60. If the users score is less than 20 when the timer counts down to 0 then the game is over.
 
 
-![countdown timer](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/time.png?raw=true " timer/countdown")
+![countdown timer](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/time.png?raw=true " timer/countdown")
 
 ### Lives Left
 The application also keeps count of the players lives. If the rabbit collides with one of the moving foxes then the player loses a life. If the players lives counter equals 0 before the player has achieved 20 points then the game is over.
 
 
-![lives left](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/lives.png?raw=true "lives left")
+![lives left](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/lives.png?raw=true "lives left")
 
 ### Mobile Game Controls
 One of the goals of this project was to allow users to play the game on any device. One of the ways this was achieved was to add mobile controls on devices below a certain screen size. The buttons allow the user to control the main sprite just as they woul using the arrow keys on a keyboard. Once the button is pressed down the color of the button turns orange to show the user the button is responding to their interaction.
 
-![mobile-controls](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/mobile-game-controls.png?raw=true "mobile game controls")
+![mobile-controls](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/mobile-game-controls.png?raw=true "mobile game controls")
 
 ### Time Running Out Game Screen
 To add aditional suspence to the game once the timer gets to 10 seconds left the game screen turns red and audio of a clock counting down begins to play. This will stop if either the players score gets to 20 or the timer runs out or the player loses all of their lives.
 
-![time running out game screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/time-running-out.png?raw=true " time runnig out image")
+![time running out game screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/time-running-out.png?raw=true " time runnig out image")
 
 ### Gain additional lives with Super Brocoli
 This feature was added towards the end of the development phase of this project. there will be a period in each level of the game where the super Brocoli appears on the game screen. If the player manages to catch the Super Brocoli before it disappears they will get an extra life.
 
-![Super Brocoli](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/super-brocoli.png?raw=true "Super Brocoli")
+![Super Brocoli](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/super-brocoli.png?raw=true "Super Brocoli")
 
 
 ### You Win Screen
 Depending upon the outcome of the game the user will be presented with one of two screen with some options.
 If the user has managed to score 20 points before the time runs down to 0 or before they have lost all of there lives they will be presented with the following screen.
 Which not only tells the user they have completed the level it also gives them the option to continue to the next level.
-![you win screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/you-win-screen.png?raw=true "you win screen")
+![you win screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/you-win-screen.png?raw=true "you win screen")
 
 ### Game Over Screen
 Alternatively if the user has failed to score 20 points before the timer runs down to 0 or they have lost all of their lives they will be presented with the game over screen that gives the user the option to begin a new game.
 
-![game over screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-over-screen.png?raw=true " game over screen" )
+![game over screen](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-over-screen.png?raw=true " game over screen" )
 
 ### Play in Portrait Mode
 Throughout the development of the project it was becomming clear that the game play screen would have to be scaled down a lot to accomodate game play in landscape mode. But I felt that this would severly effect the users experience whilst playing the game as the screen and controls would be so small that the game would become very difficult to play.
 So I decided to only allow game play on mobile devices in portrait mode to ensure the user had a good experience whilst on the site and had a positive remotional response to the game during and after the visit.
 So when the user tries to play the game in landscape mode on any mobile device the game play screen disappears and the user is greated with a warning to turn the device to portrait to comtinue playing the game.
 
-![play in portrait mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/use-in-portrait.png?raw=true "prompt the user to turn the device to portrait")
+![play in portrait mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/use-in-portrait.png?raw=true "prompt the user to turn the device to portrait")
 
 ### Multiple Level;s of game play
 The application has 3 levels of game play each level increasing in difficulty due to the increase in enemies on each level please see images below.
 
 #### Level 1
 
-![Level 1 game play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-play-screen.png?raw=true "Level 1 game play")
+![Level 1 game play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-play-screen.png?raw=true "Level 1 game play")
 
 
 #### Level 2
 
-![Level 2 Game Play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-level-2.png?raw=true " Level 2 Game Play")
+![Level 2 Game Play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-level-2.png?raw=true " Level 2 Game Play")
 
 
 #### Level 3
 
-![Level 3 Game Play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/game-level-3.png?raw=true " Level 3 Game Play")
+![Level 3 Game Play](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/game-level-3.png?raw=true "Level 3 Game Play")
 
 
 ## Technologies Used
@@ -250,28 +250,28 @@ and I am delighted to say that there were no major  errors or issues with my Mar
 
 #### Home Page
 
-![Home Page HTML Validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/index-html-validator.png?raw=true)
+![Home Page HTML Validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/index-html-validator.png?raw=true)
 
 
 #### Level 1
 
-![Level 1 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level1-html-validator.png?raw=true "Level 1 HTML Validator")
+![Level 1 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/level1-html-validator.png?raw=true "Level 1 HTML Validator")
 
 
 #### Level 2
 
-![Level 2 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level2-html-validator.png?raw=true "Level 2 HTML Validator")
+![Level 2 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/level2-html-validator.png?raw=true "Level 2 HTML Validator")
 
 
 #### Level 3
 
-![Level 3 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level3-html-validator.png?raw=true " Level 3 HTML Validator")
+![Level 3 HTML](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/level3-html-validator.png?raw=true " Level 3 HTML Validator")
 
 
 ### CSS
 The CSS file was reasonably small for this project ( around 300 lines) as a lot of the styling was done using JavaScript. The validator service used for testing the CSS was [W3C CSS Validator Service](https://jigsaw.w3.org/css-validator/) and I was delighted to see that there were no major issues or errors within the code.
 
-![CSS Validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/css-validator.png?raw=true "CSS Validator results")
+![CSS Validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/css-validator.png?raw=true "CSS Validator results")
 
 
 ### Javascript
@@ -279,22 +279,22 @@ The service that Iused to test and validate my Javascript was [JS Hint](https://
 
 #### script.js
 
-![script.js file validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/script-js-hint.png?raw=true "script.js file validator")
+![script.js file validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/script-js-hint.png?raw=true "script.js file validator")
 
 
 #### level1.js
 
-![level1.js validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level1-js-hint.png?raw=true " lelvel1.js validator results")
+![level1.js validator](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/level1-js-hint.png?raw=true " lelvel1.js validator results")
 
 
 #### level2.js
 
-![level2.js Validator Results](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level2-js-hint.png?raw=true "level 2.js Validator results")
+![level2.js Validator Results](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/level2-js-hint.png?raw=true "level 2.js Validator results")
 
 
 #### level3.js
 
-![Level3.js Validator Results](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/level3-js-hint.png?raw=true "Level3.js validator results")
+![Level3.js Validator Results](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/level3-js-hint.png?raw=true "Level3.js validator results")
 
 
 ## Performance and accessibility Testing
@@ -302,13 +302,13 @@ To test thwe overall performance and accessibility of the application U used [Th
 
 ### Desktop
 
-![Lighthouse results for Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/lighthouse-desktop.png?raw=true " Lighthouse results for desktop")
+![Lighthouse results for Desktop](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/lighthouse-desktop.png?raw=true " Lighthouse results for desktop")
 
 For mobile the results wearn't quite as impressive but overall I am still very pleased with the results.
 
 ### Mobile
 
-![Lighthouse results for mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing%20images/lighthouse-mobile.png?raw=true "Lighthouse results for mobile")
+![Lighthouse results for mobile](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/lighthouse-mobile.png?raw=true "Lighthouse results for mobile")
 
 
 ## Test Driven Development (TDD) VS Behaviour Driven Development (BDD)
@@ -337,25 +337,25 @@ see code and warning screen below.
 
 #### CSS Orientation Media Feature
 
-![CSS orientation media query](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/css%20orientation.png?raw=true "Css Media Query Orientation")
+![CSS orientation media query](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/css-orientation.png?raw=true "Css Media Query Orientation")
 
 #### Return to portrait mode warning
 
-![Return to Portait Mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/use-in-portrait.png?raw=true "Use in portrait mode warning")
+![Return to Portait Mode](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/use-in-portrait.png?raw=true "Use in portrait mode warning")
 
 
 ### Bug 2 - Glitches With Audio
 Another issue arrose within the development of this project and that was the game audio. The main audio was fine as I ensured it would begin playing as soon as the game screen had loaded.
 See code below.
 
-![Window Onload function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/images/window-onload.png?raw=true "window onload function")
+![Window Onload function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/testing-images/window-onload.png?raw=true "window onload function")
 
 However some of the conditional statements used within the project determined what sounds would play and when. So initially I Used the .pause() function to stop the audio from playing depending on what conditions where either true or false.
 This seemed to have a negative effect on the project and would cause audio to glitch especially the countdown timer audio whenever a you win or game over screen was called.
 So to resolve this if a condition was met that dictated a specific sound had to be stopped rather than using the .pause method I simply redefined the variable as undefined.
 See Below:
 
-![Audio undefined to remove glitches](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/undefined-countdown.png?raw=true " Undefined countdown variable")
+![Audio undefined to remove glitches](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/undefined-countdown.png?raw=true " Undefined countdown variable")
 
 ### Bug 3 - Enemy Sprite Random movements interfering with other Game Play
 One of the biggest issues I had during this project was the results of the collision between the main sprite (The rabbit) and the enemy sprite ( The Carrot) the initial idea was that when a collision was detected between the rabbit and the carrot the carrot would move to a random position on the canvas.
@@ -365,7 +365,7 @@ So firstly I used a for loop to push 1000 values (this was done as the canvas in
 Finally I used the .filter() method to create a new array called enemyXValue that would take the 1000 values of the XCoOrd array filter out the values specified in the deleteNums array which would leave the enemyXValue array with the desired x positions (horizontal positions) to which the carrot would appear randomly on the canvas.
 Here is the function I used to achieve this.
 
-![Main Collision Function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/Readme-images/main-collision.png?raw=true " Main Collision Function")
+![Main Collision Function](https://github.com/Shaun-Finnegan/Shaun-Finnegam-Milestone-project-2/blob/main/assets/readme-images/main-collision.png?raw=true " Main Collision Function")
 
 
 ## Wish List
