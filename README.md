@@ -436,7 +436,7 @@ A massive thank you to JS Hint for providing the JavaScript validation tool.
 
 ### Franks Laboratory
 
-A Massive thank you to Frank who's tutorials have allowed me to understand the priciple fundamental in game development.
+A Massive thank you to Frank who's tutorials have allowed me to understand the priciple fundamentals in game development.
 
 
 ### Pixabay
