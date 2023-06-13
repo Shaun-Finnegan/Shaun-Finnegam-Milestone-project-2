@@ -114,6 +114,8 @@ eatBrocoli.src = 'assets/images/audio/notification-for-game-scenes-132473.mp3';
 //Audio source taken from PixaBay https://pixabay.com/
 let countDownClock = new Audio();
 countDownClock.src = 'assets/images/audio/countdown-clock.mp3';
+let silence = new Audio();
+ silence.src='assets/images/audio/silence.wav'
 //Image source taken from https://www.freeiconspng.com/img/35687
 const fox1 = new Image();
 fox1.src = 'assets/images/foxenemy.png';
@@ -151,6 +153,20 @@ function gameLoop (){
     requestAnimationFrame(gameLoop);
 }
 
+//The TimeLow function tests if the timeLeft is less or equal to 10 and if it's true
+// changes the color of the canvas to red and begins playing the countdown timer
+function timeLow(){
+  if(timeLeft <= 10){
+    canvas.style.backgroundColor = 'red';
+    countDownClock.play();
+  }
+   
+  if(timeLeft === 0 || result === 20  ){
+      countDownClock = silence;
+    }
+ }
+
+
 // This function tests whether the timeLeft condition is true and if so
 // To produce a certain result
 function countDown(){
@@ -170,8 +186,8 @@ function countDown(){
     noPortrait.style.display = 'none';
     noPortraitText.style.display = 'none';
    gameOverAudio.play();
-   morningBirds.src = '';
-   countDownClock.src ='';
+   morningBirds.src='';
+   countDownClock.play();
   }
 }
 //This defines how oftwen the countDown function is called
@@ -192,22 +208,10 @@ function maxPoints(){
      noPortrait.style.display = 'none';
      noPortraitText.style.display = 'none';
      celebrate.play();
-     morningBirds.src = '';
-     countDownClock.src = '';
+     morningBirds.src='';
      }
 }
-//The TimeLow function tests if the timeLeft is less or equal to 10 and if it's true
-// changes the color of the canvas to red and begins playing the countdown timer
-function timeLow(){
-  if(timeLeft <= 10){
-    canvas.style.backgroundColor = 'red';
-    countDownClock.play();
-   
-    if(timeLeft === 0 || result === 20  ){
-      countDownClock.src = '';
-    }
- }
-}
+
 
 //These functions draw obsticles to the canvas
 function wallOne(){
