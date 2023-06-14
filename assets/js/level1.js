@@ -153,9 +153,9 @@ function gameLoop (){
     requestAnimationFrame(gameLoop);
 }
 
-//The TimeLow function tests if the timeLeft is less or equal to 10 and if it's true
-// changes the color of the canvas to red and begins playing the countdown timer
-function timeLow(){
+ //The TimeLow function tests if the timeLeft is less or equal to 10 and if it's true
+ // changes the color of the canvas to red and begins playing the countdown timer
+ function timeLow(){
   if(timeLeft <= 10){
     canvas.style.backgroundColor = 'red';
     countDownClock.play();
@@ -170,47 +170,50 @@ function timeLow(){
 // This function tests whether the timeLeft condition is true and if so
 // To produce a certain result
 function countDown(){
- timeLeft--;
- time.innerHTML = timeLeft;
- if(timeLeft === 0){
-  clearInterval(timerDown);
-   canvas.style.backgroundColor = 'black';
-   gameOver.style.display = 'block';
-   newGame.style.display = 'block';
-   canvas.style.display = 'none';
-   youLoseRabbit.style.display = 'block';
-  upArrow.style.display = 'none';
-    rightArrow.style.display = 'none';
-    downArrow.style.display = 'none';
-    leftArrow.style.display = 'none';
-    noPortrait.style.display = 'none';
-    noPortraitText.style.display = 'none';
-   gameOverAudio.play();
-   morningBirds.src='';
-   countDownClock.play();
-  }
-}
-//This defines how oftwen the countDown function is called
-let timerDown = setInterval(countDown, 1000);
-//This conditional statement tests if the value of result = 20 and that the timeLeft
-// Is greater than 0
-function maxPoints(){
-   if(result === 20 && timeLeft > 0){
-     youWin.style.display = 'block';
-     clearInterval(timerDown);
-     canvas.style.display = 'none';
-     nextLevel.style.display = 'block';
-     youWinRabbit.style.display = 'block';
-     upArrow.style.display = 'none';
+  timeLeft--;
+  time.innerHTML = timeLeft;
+  if(timeLeft === 0){
+   clearInterval(timerDown);
+    canvas.style.backgroundColor = 'black';
+    gameOver.style.display = 'block';
+    newGame.style.display = 'block';
+    canvas.style.display = 'none';
+    youLoseRabbit.style.display = 'block';
+   upArrow.style.display = 'none';
      rightArrow.style.display = 'none';
      downArrow.style.display = 'none';
      leftArrow.style.display = 'none';
      noPortrait.style.display = 'none';
      noPortraitText.style.display = 'none';
-     celebrate.play();
-     morningBirds.src='';
-     }
-}
+    gameOverAudio.play();
+    morningBirds = silence;
+    countDownClock = silence;
+   }
+ }
+ //This defines how oftwen the countDown function is called
+ let timerDown = setInterval(countDown, 1000);
+ //This conditional statement tests if the value of result = 20 and that the timeLeft
+ // Is greater than 0
+ function maxPoints(){
+    if(result === 20 && timeLeft > 0){
+      youWin.style.display = 'block';
+      clearInterval(timerDown);
+      canvas.style.display = 'none';
+      nextLevel.style.display = 'block';
+      youWinRabbit.style.display = 'block';
+      upArrow.style.display = 'none';
+      rightArrow.style.display = 'none';
+      downArrow.style.display = 'none';
+      leftArrow.style.display = 'none';
+      noPortrait.style.display = 'none';
+      noPortraitText.style.display = 'none';
+      celebrate.play();
+      morningBirds = silence;
+      countDownClock = silence;
+      }
+ }
+ 
+
 
 
 //These functions draw obsticles to the canvas
